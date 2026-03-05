@@ -19,32 +19,41 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-16 text-center">
-        <motion.h1
+        <motion.div
           custom={0}
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold tracking-tight leading-[0.95] text-foreground mb-6"
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-border bg-secondary/50 text-muted-foreground text-xs font-medium tracking-wide uppercase mb-8"
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
+          AI-Powered Growth
+        </motion.div>
+
+        <motion.h1
+          custom={1}
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-[72px] font-bold tracking-tight leading-[1.05] text-foreground mb-6"
         >
           Your Growth Engine.
           <br />
-          AI-Powered.
+          <span className="gradient-text">AI-Powered.</span>
         </motion.h1>
 
         <motion.p
-          custom={1}
+          custom={2}
           variants={fadeUp}
           initial="hidden"
           animate="visible"
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          We're a lean team of three who build brands, rank pages, and scale businesses.
-          <br className="hidden sm:block" />
-          Combining human creativity with machine precision to compound your growth.
+          We combine AI tools with sharp creative to build brands, rank pages, and drive revenue.
         </motion.p>
 
         <motion.div
-          custom={2}
+          custom={3}
           variants={fadeUp}
           initial="hidden"
           animate="visible"
@@ -54,7 +63,7 @@ const HeroSection = () => {
             href="#contact"
             className="group px-8 py-3.5 rounded-lg text-sm font-medium bg-foreground text-background hover:bg-foreground/90 transition-all inline-flex items-center gap-2"
           >
-            Book a Free Strategy Call
+            Book a Call
             <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
           </a>
           <a
