@@ -5,19 +5,19 @@ const services = [
     num: "01",
     title: "AI Web Development",
     description:
-      "High-performance websites built at startup speed. We design, develop, and deploy custom sites that convert visitors into customers — powered by AI tooling from wireframe to production.",
+      "High-performance websites built at startup speed. We design, develop, and deploy custom sites that convert visitors into customers, powered by AI tooling from wireframe to production.",
   },
   {
     num: "02",
     title: "SEO & Growth Engineering",
     description:
-      "Rank. Convert. Repeat. From technical audits to AI-assisted content at scale, we build the organic engine that keeps compounding — 12x traffic growth and counting.",
+      "Rank. Convert. Repeat. From technical audits to AI-assisted content at scale, we build the organic engine that keeps compounding. 12x traffic growth and counting.",
   },
   {
     num: "03",
     title: "Content & Social Media",
     description:
-      "Platform-specific strategies that turn followers into customers. We handle content calendars, community management, and creator partnerships — all backed by data.",
+      "Platform-specific strategies that turn followers into customers. We handle content calendars, community management, and creator partnerships, all backed by data.",
   },
 ];
 
@@ -36,7 +36,7 @@ const ServicesSection = () => {
             What We Do
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl">
-            Strategy, design, and engineering — under one roof.
+            Strategy, design, and engineering. Under one roof.
           </p>
         </motion.div>
 
