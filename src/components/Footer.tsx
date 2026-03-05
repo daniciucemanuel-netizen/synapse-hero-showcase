@@ -7,7 +7,7 @@ const Footer = () => {
         <p className="text-center text-sm text-muted-foreground mb-8">Let's grow smarter, together.</p>
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="text-sm text-muted-foreground">
-          © 2026 Synapse. All rights reserved.
+          © 2026 The Growth Desk. All rights reserved.
         </div>
 
         <div className="flex items-center gap-5">
