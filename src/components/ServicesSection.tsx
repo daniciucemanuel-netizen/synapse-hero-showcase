@@ -6,19 +6,19 @@ const services = [
     icon: Code,
     title: "AI Web Development",
     description:
-      "Custom-built, high-performance websites powered by artificial intelligence. From concept to deployment in record time.",
+      "High-performance websites built at startup speed. We design, develop, and deploy custom sites that convert visitors into customers — powered by AI tooling from wireframe to production.",
   },
   {
     icon: TrendingUp,
-    title: "SEO & Growth",
+    title: "SEO & Growth Engineering",
     description:
-      "Data-driven SEO strategies and growth hacking techniques that put you on page one and keep you there.",
+      "Rank. Convert. Repeat. From technical audits to AI-assisted content at scale, we build the organic engine that keeps compounding — 12x traffic growth and counting.",
   },
   {
     icon: Smartphone,
     title: "Content & Social Media",
     description:
-      "Engaging content creation and social media management that builds community and drives conversions.",
+      "Platform-specific strategies that turn followers into customers. We handle content calendars, community management, and creator partnerships — all backed by data.",
   },
 ];
 
@@ -34,10 +34,10 @@ const ServicesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-            What We Do
+            Every Service. Powered by AI.
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            A lean, powerful toolkit for brands that move fast.
+            A full-stack growth partner — not a bloated agency. Just the services that move the needle.
           </p>
         </motion.div>
 

@@ -18,10 +18,10 @@ const TeamSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-            The Team Behind the Tech
+            Small Team. Big Results.
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            We're a dedicated, agile trio obsessed with performance, design, and measurable growth.
+            No account managers. No layers. You work directly with the people who do the work — a dedicated, agile trio obsessed with performance.
           </p>
         </motion.div>
 

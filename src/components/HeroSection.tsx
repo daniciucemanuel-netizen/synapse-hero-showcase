@@ -56,9 +56,9 @@ const HeroSection = () => {
           animate="visible"
           className="text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold tracking-tight leading-[0.95] text-foreground mb-6"
         >
-          Where Innovation
+          Your Growth Engine.
           <br />
-          Meets Execution
+          AI-Powered.
         </motion.h1>
 
         {/* Subtext */}
@@ -69,9 +69,9 @@ const HeroSection = () => {
           animate="visible"
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Streamline your testing, deployment, and marketing workflows.
+          We're a lean team of three who build brands, rank pages, and scale businesses
           <br className="hidden sm:block" />
-          Ship faster with AI-powered automation that scales with your team.
+           — combining human creativity with machine precision to compound your growth.
         </motion.p>
 
         {/* Buttons */}
@@ -86,13 +86,13 @@ const HeroSection = () => {
             href="#get-started"
             className="px-8 py-3.5 rounded-full text-sm font-medium bg-background text-foreground border border-foreground/20 hover:border-foreground/50 transition-all"
           >
-            Get Started for Free
+            Book a Free Strategy Call
           </a>
           <a
             href="#contact"
             className="px-8 py-3.5 rounded-full text-sm font-medium glass hover:bg-white/10 transition-all text-foreground"
           >
-            Let's Get Connected
+            See Our Work
           </a>
         </motion.div>
       </div>
