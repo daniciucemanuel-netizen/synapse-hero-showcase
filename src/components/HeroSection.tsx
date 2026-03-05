@@ -1,23 +1,17 @@
 import { motion } from "framer-motion";
-import { Zap, Shield, Globe } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import VideoPlayer from "./VideoPlayer";
-
-const badges = [
-  { icon: Zap, label: "Integrated with Zapier" },
-  { icon: Shield, label: "Integrated with Vercel" },
-  { icon: Globe, label: "Integrated with AWS" },
-];
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: 0.2 + i * 0.15, duration: 0.7, ease: [0.25, 0.4, 0.25, 1] as const },
+    transition: { delay: 0.1 + i * 0.15, duration: 0.7, ease: [0.25, 0.4, 0.25, 1] as const },
   }),
 };
 
-const placeholderLogos = ["Stripe", "Vercel", "Figma", "Notion", "Linear", "Framer"];
+const trustedBy = ["Stripe", "Vercel", "Figma", "Notion", "Linear", "Framer"];
 
 const HeroSection = () => {
   return (
@@ -29,28 +23,9 @@ const HeroSection = () => {
 
       {/* Hero Content */}
       <div className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-16 text-center">
-        {/* Badges */}
-        <motion.div
-          className="flex flex-wrap justify-center gap-3 mb-10"
-          initial="hidden"
-          animate="visible"
-        >
-          {badges.map((badge, i) => (
-            <motion.div
-              key={badge.label}
-              custom={i}
-              variants={fadeUp}
-              className="glass rounded-full px-4 py-2 flex items-center gap-2 text-sm text-foreground/80"
-            >
-              <badge.icon size={14} className="text-primary" />
-              {badge.label}
-            </motion.div>
-          ))}
-        </motion.div>
-
         {/* Headline */}
         <motion.h1
-          custom={3}
+          custom={0}
           variants={fadeUp}
           initial="hidden"
           animate="visible"
@@ -63,7 +38,7 @@ const HeroSection = () => {
 
         {/* Subtext */}
         <motion.p
-          custom={4}
+          custom={1}
           variants={fadeUp}
           initial="hidden"
           animate="visible"
@@ -76,40 +51,50 @@ const HeroSection = () => {
 
         {/* Buttons */}
         <motion.div
-          custom={5}
+          custom={2}
           variants={fadeUp}
           initial="hidden"
           animate="visible"
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="#get-started"
-            className="px-8 py-3.5 rounded-full text-sm font-medium bg-background text-foreground border border-foreground/20 hover:border-foreground/50 transition-all"
+            href="#contact"
+            className="group px-8 py-3.5 rounded-lg text-sm font-medium bg-foreground text-background hover:bg-foreground/90 transition-all inline-flex items-center gap-2"
           >
             Book a Free Strategy Call
+            <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
           </a>
           <a
-            href="#contact"
-            className="px-8 py-3.5 rounded-full text-sm font-medium glass hover:bg-white/10 transition-all text-foreground"
+            href="#work"
+            className="px-8 py-3.5 rounded-lg text-sm font-medium border border-border text-foreground hover:border-muted-foreground transition-all"
           >
             See Our Work
           </a>
         </motion.div>
       </div>
 
-      {/* Logo Marquee */}
-      <div className="relative z-10 w-full mt-auto pb-12 overflow-hidden">
-        <div className="flex marquee opacity-40 grayscale">
-          {[...placeholderLogos, ...placeholderLogos].map((logo, i) => (
-            <div
-              key={i}
-              className="flex-shrink-0 mx-10 text-foreground/50 text-sm font-medium tracking-widest uppercase"
+      {/* Trusted By — static, minimal */}
+      <motion.div
+        custom={3}
+        variants={fadeUp}
+        initial="hidden"
+        animate="visible"
+        className="relative z-10 w-full mt-auto pb-16"
+      >
+        <p className="text-center text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6">
+          Trusted by forward-thinking brands
+        </p>
+        <div className="flex items-center justify-center gap-10 flex-wrap opacity-30">
+          {trustedBy.map((name) => (
+            <span
+              key={name}
+              className="text-foreground text-sm font-medium tracking-widest uppercase"
             >
-              {logo}
-            </div>
+              {name}
+            </span>
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
