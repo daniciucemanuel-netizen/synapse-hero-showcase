@@ -56,9 +56,9 @@ const HeroSection = () => {
           animate="visible"
           className="text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold tracking-tight leading-[0.95] text-foreground mb-6"
         >
-          Where Innovation
+          Your Growth Engine.
           <br />
-          Meets Execution
+          AI-Powered.
         </motion.h1>
 
         {/* Subtext */}
