@@ -27,6 +27,7 @@ const Footer = () => {
             Contact Us
           </a>
         </div>
+        </div>
       </div>
     </footer>
   );
