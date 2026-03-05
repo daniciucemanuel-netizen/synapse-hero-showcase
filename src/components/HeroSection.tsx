@@ -86,7 +86,7 @@ const HeroSection = () => {
             href="#get-started"
             className="px-8 py-3.5 rounded-full text-sm font-medium bg-background text-foreground border border-foreground/20 hover:border-foreground/50 transition-all"
           >
-            Get Started for Free
+            Book a Free Strategy Call
           </a>
           <a
             href="#contact"
