@@ -5,17 +5,17 @@ const projects = [
   {
     title: "Surflux",
     tag: "AI Web Design & SEO",
-    description: "Complete brand overhaul and AI-driven web presence for a next-gen surf tech company.",
+    description: "Complete brand overhaul and AI-driven web presence. Launched in 6 weeks with a 40% increase in qualified leads from day one.",
   },
   {
     title: "LoadBetter",
     tag: "Growth Engineering",
-    description: "Scaled organic traffic 12x in 6 months through technical SEO and content strategy.",
+    description: "Scaled organic traffic 12x in 6 months through technical SEO, programmatic content, and strategic link building.",
   },
   {
     title: "Vinosivezi",
     tag: "Content & Social",
-    description: "Built a thriving online community and e-commerce funnel for an artisan wine brand.",
+    description: "Built a 50K+ community and full e-commerce funnel for an artisan wine brand. 3.2x return on ad spend within 90 days.",
   },
 ];
 
