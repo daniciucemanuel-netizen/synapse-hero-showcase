@@ -34,10 +34,10 @@ const ServicesSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-            What We Do
+            Every Service. Powered by AI.
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            A lean, powerful toolkit for brands that move fast.
+            A full-stack growth partner — not a bloated agency. Just the services that move the needle.
           </p>
         </motion.div>
 

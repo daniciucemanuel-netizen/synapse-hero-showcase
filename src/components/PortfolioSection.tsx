@@ -31,10 +31,10 @@ const PortfolioSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-            Recent Projects
+            Results Speak Louder.
           </h2>
           <p className="text-muted-foreground text-lg max-w-xl mx-auto">
-            Real results for real brands. Here's what we've been building.
+            Real outcomes for real brands. No vanity metrics.
           </p>
         </motion.div>
 

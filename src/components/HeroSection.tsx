@@ -92,7 +92,7 @@ const HeroSection = () => {
             href="#contact"
             className="px-8 py-3.5 rounded-full text-sm font-medium glass hover:bg-white/10 transition-all text-foreground"
           >
-            Let's Get Connected
+            See Our Work
           </a>
         </motion.div>
       </div>

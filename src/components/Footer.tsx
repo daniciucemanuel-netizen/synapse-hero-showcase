@@ -3,7 +3,9 @@ import { Linkedin, Twitter, Instagram } from "lucide-react";
 const Footer = () => {
   return (
     <footer className="py-12 bg-background border-t border-border">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div className="max-w-7xl mx-auto px-6">
+        <p className="text-center text-sm text-muted-foreground mb-8">Let's grow smarter, together.</p>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
         <div className="text-sm text-muted-foreground">
           © 2026 Synapse. All rights reserved.
         </div>
