@@ -69,9 +69,9 @@ const HeroSection = () => {
           animate="visible"
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Streamline your testing, deployment, and marketing workflows.
+          We're a lean team of three who build brands, rank pages, and scale businesses
           <br className="hidden sm:block" />
-          Ship faster with AI-powered automation that scales with your team.
+           — combining human creativity with machine precision to compound your growth.
         </motion.p>
 
         {/* Buttons */}
