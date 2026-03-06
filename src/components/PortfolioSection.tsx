@@ -17,6 +17,12 @@ const clients = [
     url: "https://vinosivezi.ro",
     description: "Built the platform from the ground up including landing pages, payments, and a volunteer management dashboard.",
   },
+  {
+    name: "Meridian Freight",
+    url: "https://meridian-freight-smart.lovable.app",
+    description: "Full concept build — branding, logo design, and website, all created from scratch.",
+    tag: "Concept Project",
+  },
 ];
 
 const PortfolioSection = () => {
