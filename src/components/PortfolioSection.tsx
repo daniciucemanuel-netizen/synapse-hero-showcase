@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
 const clients = [
@@ -37,6 +38,14 @@ const clients = [
 ];
 
 const PortfolioSection = () => {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleClick = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const activeClient = activeIndex !== null ? clients[activeIndex] : null;
+
   return (
     <section id="work" className="py-32 bg-background">
       <div className="max-w-7xl mx-auto px-6">
@@ -55,60 +64,76 @@ const PortfolioSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
           {clients.map((client, i) => (
-            <motion.a
+            <motion.button
               key={client.name}
-              href={client.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
-              className={`group rounded-xl border border-border p-8 pb-6 hover:border-muted-foreground/40 hover:-translate-y-0.5 hover:shadow-lg transition-all duration-300 flex flex-col justify-between min-h-[260px] ${
-                i === 0 ? "sm:col-span-2" : ""
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.05, duration: 0.4 }}
+              onClick={() => handleClick(i)}
+              className={`relative text-left rounded-xl border px-6 py-8 transition-all duration-300 cursor-pointer ${
+                activeIndex === i
+                  ? "border-primary/40 bg-primary/5 text-foreground"
+                  : "border-border text-muted-foreground hover:text-foreground hover:border-muted-foreground/40"
               }`}
             >
-              <div>
-                <div className="flex items-center justify-between mb-3">
-                  <div className="flex items-center gap-3">
-                    <span className="text-xs font-mono text-muted-foreground/50 tracking-wider">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className="text-xl font-bold text-foreground tracking-tight">
-                      {client.name}
-                    </h3>
-                    {client.tag && (
-                      <span className="text-[10px] uppercase tracking-wider text-muted-foreground border border-border rounded-full px-2 py-0.5">
-                        {client.tag}
-                      </span>
-                    )}
-                  </div>
-                  <ArrowUpRight className="w-4 h-4 text-muted-foreground opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all duration-200" />
-                </div>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  {client.description}
+              <span className="text-2xl md:text-3xl font-bold tracking-tight leading-tight block">
+                {client.name}
+              </span>
+              {client.tag && (
+                <span className="text-[10px] uppercase tracking-wider text-muted-foreground mt-2 inline-block">
+                  {client.tag}
+                </span>
+              )}
+              {activeIndex === i && (
+                <motion.div
+                  layoutId="active-indicator"
+                  className="absolute bottom-0 left-6 right-6 h-0.5 bg-primary rounded-full"
+                />
+              )}
+            </motion.button>
+          ))}
+        </div>
+
+        <AnimatePresence mode="wait">
+          {activeClient && (
+            <motion.div
+              key={activeIndex}
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              className="overflow-hidden"
+            >
+              <div className="mt-4 rounded-xl border border-border p-8 md:p-10">
+                <p className="text-base text-muted-foreground leading-relaxed mb-6 max-w-2xl">
+                  {activeClient.description}
                 </p>
-                <div className="flex flex-wrap gap-1.5">
-                  {client.services.map((service) => (
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {activeClient.services.map((service) => (
                     <span
                       key={service}
-                      className="text-[11px] text-muted-foreground/70 bg-muted/60 rounded-full px-2.5 py-0.5"
+                      className="text-xs text-muted-foreground bg-muted rounded-full px-3 py-1"
                     >
                       {service}
                     </span>
                   ))}
                 </div>
+                <a
+                  href={activeClient.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
+                >
+                  {activeClient.url.replace("https://", "")}
+                  <ArrowUpRight className="w-4 h-4" />
+                </a>
               </div>
-              <div className="border-t border-border mt-6 pt-4">
-                <span className="text-xs text-muted-foreground/60">
-                  {client.url.replace("https://", "")}
-                </span>
-              </div>
-            </motion.a>
-          ))}
-        </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </section>
   );
