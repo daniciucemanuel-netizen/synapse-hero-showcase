@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const metrics = [
-  { value: "12x", label: "Organic traffic in 6 months", grid: "col-span-2 row-span-2 p-12", valueClass: "text-6xl sm:text-8xl gradient-text", bg: "bg-white/[0.02]" },
+  { value: "12x", label: "Organic traffic in 6 months", grid: "col-span-2 row-span-2 p-12", valueClass: "text-6xl sm:text-8xl gradient-text", bg: "bg-muted/50" },
   { value: "3.2x", label: "Return on ad spend in 90 days", grid: "row-span-2 p-10", valueClass: "text-4xl sm:text-5xl", bg: "" },
   { value: "20%", label: "Increase in qualified leads", grid: "p-8", valueClass: "text-3xl sm:text-4xl", bg: "" },
   { value: "40%", label: "Faster product launch cycles", grid: "p-8", valueClass: "text-3xl sm:text-4xl", bg: "" },
