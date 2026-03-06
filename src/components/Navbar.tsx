@@ -1,4 +1,6 @@
 import { motion } from "framer-motion";
+import { Sun, Moon } from "lucide-react";
+import { useTheme } from "next-themes";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -8,6 +10,8 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const { theme, setTheme } = useTheme();
+
   return (
     <motion.nav
       initial={{ y: -20, opacity: 0 }}
@@ -32,12 +36,21 @@ const Navbar = () => {
           ))}
         </div>
 
-        <a
-          href="#contact"
-          className="hidden md:inline-flex items-center px-5 py-2 rounded-lg text-sm font-medium border border-border text-foreground hover:border-muted-foreground transition-all"
-        >
-          Let's Talk
-        </a>
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            className="p-2 rounded-lg border border-border text-muted-foreground hover:text-foreground hover:border-muted-foreground transition-all"
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
+          </button>
+          <a
+            href="#contact"
+            className="hidden md:inline-flex items-center px-5 py-2 rounded-lg text-sm font-medium border border-border text-foreground hover:border-muted-foreground transition-all"
+          >
+            Let's Talk
+          </a>
+        </div>
       </div>
     </motion.nav>
   );
