@@ -22,7 +22,7 @@ const TeamSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
           {team.map((member, i) => (
             <motion.div
               key={member.name}
@@ -30,7 +30,7 @@ const TeamSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15, duration: 0.6 }}
-              className="flex flex-col items-center sm:items-start"
+              className="flex flex-col items-center"
             >
               <div className="w-20 h-20 rounded-full bg-secondary border border-border mb-5 flex items-center justify-center text-sm font-medium text-muted-foreground tracking-wide">
                 {member.initials}
