@@ -30,7 +30,7 @@ const TeamSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.15, duration: 0.6 }}
-              className="flex flex-col items-center sm:items-start"
+              className="flex flex-col items-center"
             >
               <div className="w-20 h-20 rounded-full bg-secondary border border-border mb-5 flex items-center justify-center text-sm font-medium text-muted-foreground tracking-wide">
                 {member.initials}
