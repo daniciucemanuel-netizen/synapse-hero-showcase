@@ -56,9 +56,16 @@ const PortfolioSection = () => {
             >
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-lg font-semibold text-foreground tracking-tight">
-                    {client.name}
-                  </h3>
+                  <div className="flex items-center gap-2">
+                    <h3 className="text-lg font-semibold text-foreground tracking-tight">
+                      {client.name}
+                    </h3>
+                    {client.tag && (
+                      <span className="text-[10px] uppercase tracking-wider text-muted-foreground border border-border rounded-full px-2 py-0.5">
+                        {client.tag}
+                      </span>
+                    )}
+                  </div>
                   <ArrowUpRight className="w-4 h-4 text-muted-foreground opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all duration-200" />
                 </div>
                 <p className="text-sm text-muted-foreground leading-relaxed">
