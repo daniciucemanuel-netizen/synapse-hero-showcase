@@ -23,6 +23,12 @@ const clients = [
     description: "Full concept build — branding, logo design, and website, all created from scratch.",
     tag: "Concept Project",
   },
+  {
+    name: "Blanc Smile Studio",
+    url: "https://blanc-smile-studio.lovable.app",
+    description: "Full concept build — branding, logo design, and website, all created from scratch.",
+    tag: "Concept Project",
+  },
 ];
 
 const PortfolioSection = () => {
