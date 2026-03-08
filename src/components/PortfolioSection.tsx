@@ -75,9 +75,9 @@ const PortfolioSection = () => {
                 onClick={() => handleClick(i)}
                 className="w-full text-left border-b border-border group"
               >
-                <div className="flex items-center justify-between py-5 md:py-6 transition-transform duration-300 group-hover:translate-x-2">
-                  <div className="flex items-center gap-4">
-                    <h3 className="text-2xl md:text-4xl font-bold tracking-tight text-foreground transition-colors duration-300 group-hover:text-[hsl(var(--sage))]">
+                <div className="flex items-center justify-between py-4 md:py-5 transition-transform duration-300 group-hover:translate-x-2">
+                  <div className="flex items-center gap-3">
+                    <h3 className="text-xl md:text-2xl font-semibold tracking-tight text-foreground transition-colors duration-300 group-hover:text-[hsl(var(--sage))]">
                       {client.name}
                     </h3>
                     {client.tag && (
