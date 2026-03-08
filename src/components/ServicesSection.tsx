@@ -3,62 +3,80 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "AI Web Development",
-    description:
-      "High-performance websites built at startup speed. We design, develop, and deploy custom sites that convert visitors into customers, powered by AI tooling from wireframe to production.",
+    title: "Brand & Web Development",
+    description: "From visual identity to production-ready websites. We design and ship — fast.",
+    tags: ["Visual Identity", "Product/UI Design", "Websites", "Landing Pages", "Pitch Decks"],
   },
   {
     num: "02",
-    title: "SEO & Growth Engineering",
-    description:
-      "Rank. Convert. Repeat. From technical audits to AI-assisted content at scale, we build the organic engine that keeps compounding. 12x traffic growth and counting.",
+    title: "Content & Distribution",
+    description: "SEO-optimized content, multi-channel distribution, and a publishing engine that compounds.",
+    tags: ["Content Calendars", "Blog & Long-Form", "SEO/AEO Strategy", "Newsletter", "Medium/LinkedIn/Substack"],
   },
   {
     num: "03",
-    title: "Content & Social Media",
-    description:
-      "Platform-specific strategies that turn followers into customers. We handle content calendars, community management, and creator partnerships, all backed by data.",
+    title: "Social & Community",
+    description: "Platform-native strategies for X, Instagram, and emerging channels. Community-first growth.",
+    tags: ["X Management", "Community Building", "Reply Strategy", "Spaces & Events", "Custom Graphics"],
+  },
+  {
+    num: "04",
+    title: "Growth & Partnerships",
+    description: "KOL campaigns, influencer coordination, press, and go-to-market strategy.",
+    tags: ["KOL Campaigns", "Partnership Management", "PR & Media", "Launch Strategy", "Campaign Analytics"],
   },
 ];
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-32 bg-background">
+    <section id="services" className="py-28 bg-white">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-14"
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#1A4D2E] mb-3 block">
             What We Do
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
+            Full-stack growth. Every channel covered.
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl">
-            Strategy, design, and engineering. Under one roof.
-          </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-border">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {services.map((service, i) => (
             <motion.div
-              key={service.title}
+              key={service.num}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: i * 0.15, duration: 0.6 }}
-              className="p-8 pt-10 border-b md:border-b-0 md:border-r border-border last:border-r-0 last:border-b-0"
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+              className={`border-t-2 border-t-[#1A4D2E] p-6 pt-8 transition-colors duration-200 hover:bg-[#F3F2ED] ${
+                i < services.length - 1 ? "lg:border-r border-border" : ""
+              }`}
             >
-              <span className="text-xs font-mono text-muted-foreground tracking-wider">
+              <span className="font-mono text-xs text-muted-foreground tracking-wider">
                 {service.num}
               </span>
-              <h3 className="text-xl font-semibold text-foreground mt-4 mb-4 tracking-tight">
+              <h3 className="text-lg font-semibold text-foreground mt-4 mb-3 tracking-tight leading-snug">
                 {service.title}
               </h3>
-              <p className="text-muted-foreground leading-relaxed text-sm">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-5">
                 {service.description}
               </p>
+              <div className="flex flex-wrap gap-1.5">
+                {service.tags.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-muted text-muted-foreground"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           ))}
         </div>
