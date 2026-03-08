@@ -62,7 +62,7 @@ const ProcessSection = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: i * 0.1, duration: 0.5 }}
-                className={`py-10 ${i < steps.length - 1 ? "border-b border-border" : ""}`}
+                className={`py-12 ${i < steps.length - 1 ? "border-b border-border" : ""}`}
               >
                 <div className="flex items-start justify-between gap-4 mb-3">
                   <div className="flex items-baseline gap-4">

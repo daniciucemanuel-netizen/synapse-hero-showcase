@@ -77,7 +77,7 @@ const PortfolioSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="mt-12 text-center"
+          className="mt-16 text-center"
         >
           <Link
             to="/work"
