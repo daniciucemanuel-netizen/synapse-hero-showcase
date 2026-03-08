@@ -1,34 +1,34 @@
 import { motion } from "framer-motion";
 
 const metrics = [
-  { value: "12x", label: "Organic traffic in 6 months", grid: "col-span-2 row-span-2 p-12", valueClass: "text-6xl sm:text-8xl gradient-text", bg: "bg-muted/50" },
-  { value: "3.2x", label: "Return on ad spend in 90 days", grid: "row-span-2 p-10", valueClass: "text-4xl sm:text-5xl", bg: "" },
-  { value: "20%", label: "Increase in qualified leads", grid: "p-8", valueClass: "text-3xl sm:text-4xl", bg: "" },
-  { value: "40%", label: "Faster product launch cycles", grid: "p-8", valueClass: "text-3xl sm:text-4xl", bg: "" },
-  { value: "2x", label: "Conversion improvement after website redesign", grid: "p-8", valueClass: "text-3xl sm:text-4xl", bg: "" },
-  { value: "50+", label: "Products and campaigns launched", grid: "p-8", valueClass: "text-3xl sm:text-4xl", bg: "" },
+  { value: "3.5x", label: "Average organic traffic growth in 6 months" },
+  { value: "47%", label: "Increase in qualified inbound leads" },
+  { value: "2.1x", label: "Return on ad spend across campaigns" },
+  { value: "30+", label: "Projects shipped for clients" },
+  { value: "18", label: "Average days from brief to launch" },
+  { value: "96%", label: "Client retention rate" },
 ];
 
 const ResultsSection = () => {
   return (
-    <section id="results" className="py-32 bg-background">
+    <section id="results" className="py-28 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-14"
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
+            Results
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
             What We Delivered
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl">
-            Real outcomes for real brands. No vanity metrics.
-          </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 auto-rows-[minmax(160px,1fr)] gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-px bg-border">
           {metrics.map((metric, i) => (
             <motion.div
               key={metric.value + metric.label}
@@ -36,12 +36,12 @@ const ResultsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.08, duration: 0.5 }}
-              className={`rounded-xl border border-border hover:border-muted-foreground/40 transition-colors flex flex-col justify-end ${metric.grid} ${metric.bg}`}
+              className="bg-[hsl(var(--surface))] p-8 border-t-2 border-t-[hsl(var(--sage))] hover:bg-muted/50 transition-colors duration-200"
             >
-              <span className={`font-bold tracking-tight text-foreground mb-3 ${metric.valueClass}`}>
+              <span className="font-mono text-4xl sm:text-5xl font-bold tracking-tight text-[hsl(var(--sage))] block mb-3">
                 {metric.value}
               </span>
-              <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 {metric.label}
               </p>
             </motion.div>
