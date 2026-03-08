@@ -50,7 +50,7 @@ const HeroSection = () => {
         >
           <a
             href="#contact"
-            className="group px-9 py-4 rounded-lg text-sm font-medium bg-foreground text-background hover:bg-foreground/90 transition-all inline-flex items-center gap-2"
+            className="group px-10 py-4 rounded-full text-sm font-medium bg-foreground text-background hover:bg-foreground/90 transition-all inline-flex items-center gap-2"
           >
             Get Started
             <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
