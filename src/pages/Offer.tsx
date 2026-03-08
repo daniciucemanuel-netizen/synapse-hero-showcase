@@ -46,7 +46,7 @@ const pricing = [
 
 const Offer = () => {
   return (
-    <div className="min-h-screen bg-[#FAFAF7]">
+    <div className="min-h-screen bg-[hsl(var(--surface))]">
       {/* Header */}
       <header className="max-w-4xl mx-auto px-6 py-8 flex items-center justify-between border-b border-border">
         <span className="font-semibold text-foreground tracking-tight text-lg" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
