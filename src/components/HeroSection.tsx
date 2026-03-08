@@ -25,7 +25,7 @@ const HeroSection = () => {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold tracking-tight leading-[1.05] text-foreground mb-6"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold tracking-tight leading-[1.05] text-foreground mb-8"
         >
           Your growth engine.<br />
           <span className="text-[hsl(var(--sage))]">AI-Powered.</span>
