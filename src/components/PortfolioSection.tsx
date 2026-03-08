@@ -45,19 +45,19 @@ const PortfolioSection = () => {
   };
 
   return (
-    <section id="work" className="py-32 bg-background">
+    <section id="work" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-10"
         >
           <span className="text-xs font-mono uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-4 block">
             Selected Work
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
             Clients
           </h2>
         </motion.div>
@@ -75,9 +75,9 @@ const PortfolioSection = () => {
                 onClick={() => handleClick(i)}
                 className="w-full text-left border-b border-border group"
               >
-                <div className="flex items-center justify-between py-8 md:py-10 transition-transform duration-300 group-hover:translate-x-2">
+                <div className="flex items-center justify-between py-5 md:py-6 transition-transform duration-300 group-hover:translate-x-2">
                   <div className="flex items-center gap-4">
-                    <h3 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground transition-colors duration-300 group-hover:text-[hsl(var(--sage))]">
+                    <h3 className="text-2xl md:text-4xl font-bold tracking-tight text-foreground transition-colors duration-300 group-hover:text-[hsl(var(--sage))]">
                       {client.name}
                     </h3>
                     {client.tag && (
@@ -97,7 +97,7 @@ const PortfolioSection = () => {
                         </span>
                       ))}
                     </div>
-                    <ArrowUpRight className="w-5 h-5 text-muted-foreground transition-all duration-300 group-hover:text-[hsl(var(--sage))] group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    <ArrowUpRight className="w-4 h-4 text-muted-foreground transition-all duration-300 group-hover:text-[hsl(var(--sage))] group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                   </div>
                 </div>
               </button>
@@ -112,8 +112,8 @@ const PortfolioSection = () => {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="overflow-hidden"
                   >
-                    <div className="pb-8 md:pb-10 pl-0 md:pl-2">
-                      <div className="bg-muted/30 rounded-xl p-8 md:p-10 max-w-3xl">
+                     <div className="pb-5 md:pb-6 pl-0 md:pl-2">
+                       <div className="bg-muted/30 rounded-xl p-6 md:p-8 max-w-3xl">
                         <p className="text-base text-muted-foreground leading-relaxed mb-6">
                           {client.description}
                         </p>
