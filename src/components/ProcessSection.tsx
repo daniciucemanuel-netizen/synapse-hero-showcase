@@ -33,9 +33,9 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section className="py-32 bg-[hsl(var(--surface))]">
+    <section className="py-36 bg-[hsl(var(--surface))]">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-16 lg:gap-20">
           <div className="lg:col-span-2">
             <div className="lg:sticky lg:top-32">
               <motion.div
