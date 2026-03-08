@@ -152,7 +152,7 @@ const Offer = () => {
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-8">
             Investment
           </h2>
-          <div className="border-t-2 border-t-[#1A4D2E] border-b border-border">
+          <div className="border-t-2 border-t-[hsl(var(--sage))] border-b border-border">
             {pricing.map((p) => (
               <div key={p.service} className="flex items-center justify-between py-5 border-b border-border last:border-b-0">
                 <span className="text-sm font-medium text-foreground">{p.service}</span>
