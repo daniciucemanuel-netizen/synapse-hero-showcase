@@ -36,7 +36,7 @@ const ResultsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.08, duration: 0.5 }}
-              className="bg-[hsl(var(--surface))] p-8 md:p-10 hover:bg-muted/50 transition-colors duration-200"
+              className="bg-background p-10 md:p-14"
             >
               <span className="font-mono text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[hsl(var(--sage))] block mb-3">
                 {metric.value}
