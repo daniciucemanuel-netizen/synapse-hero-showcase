@@ -86,7 +86,7 @@ const Offer = () => {
                 key={d}
                 className={`flex items-center gap-3 py-4 px-1 border-b border-border ${i % 2 === 0 ? "md:border-r" : ""}`}
               >
-                <span className="font-mono text-xs text-[#1A4D2E]">{String(i + 1).padStart(2, "0")}</span>
+                <span className="font-mono text-xs text-[hsl(var(--sage))]">{String(i + 1).padStart(2, "0")}</span>
                 <span className="text-sm text-foreground font-medium">{d}</span>
               </div>
             ))}
