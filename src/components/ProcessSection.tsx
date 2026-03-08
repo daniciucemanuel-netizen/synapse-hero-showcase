@@ -33,7 +33,7 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section className="py-28 bg-[#FAFAF7]">
+    <section className="py-28 bg-[hsl(var(--surface))]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
           {/* Left sticky column */}
