@@ -6,7 +6,7 @@ const steps = [
     title: "Audit & Discovery",
     time: "Week 1",
     description:
-      "We map your current digital presence — brand positioning, content gaps, competitive landscape, and channel opportunities. You get a full audit within 7 days.",
+      "We map your current digital presence: brand positioning, content gaps, competitive landscape, and channel opportunities. You get a full audit within 7 days.",
   },
   {
     num: "02",
@@ -20,7 +20,7 @@ const steps = [
     title: "Execute & Ship",
     time: "Weeks 3-8",
     description:
-      "Content creation, campaign launches, community activation, and distribution — all running simultaneously. Bi-weekly check-ins, weekly reports.",
+      "Content creation, campaign launches, community activation, and distribution. All running simultaneously. Bi-weekly check-ins, weekly reports.",
   },
   {
     num: "04",
@@ -36,7 +36,6 @@ const ProcessSection = () => {
     <section className="py-28 bg-[hsl(var(--surface))]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
-          {/* Left sticky column */}
           <div className="lg:col-span-2">
             <div className="lg:sticky lg:top-32">
               <motion.div
@@ -46,19 +45,15 @@ const ProcessSection = () => {
                 transition={{ duration: 0.6 }}
               >
                 <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
-                  The Process
+                  How We Work
                 </span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-5 leading-[1.1]">
-                  From kickoff to compounding growth.
+                  Four phases. Eight weeks to full velocity.
                 </h2>
-                <p className="text-muted-foreground text-base" style={{ fontFamily: "'Syne', sans-serif" }}>
-                  No fluff. Every step builds on the last.
-                </p>
               </motion.div>
             </div>
           </div>
 
-          {/* Right timeline column */}
           <div className="lg:col-span-3">
             {steps.map((step, i) => (
               <motion.div

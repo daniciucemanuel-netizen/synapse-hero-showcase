@@ -4,7 +4,7 @@ const services = [
   {
     num: "01",
     title: "Brand & Web Development",
-    description: "From visual identity to production-ready websites. We design and ship — fast.",
+    description: "From visual identity to production-ready websites. We design and ship, fast.",
     tags: ["Visual Identity", "Product/UI Design", "Websites", "Landing Pages", "Pitch Decks"],
   },
   {
@@ -42,7 +42,7 @@ const ServicesSection = () => {
             What We Do
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
-            Full-stack growth. Every channel covered.
+            Four services. One team. No gaps.
           </h2>
         </motion.div>
 
