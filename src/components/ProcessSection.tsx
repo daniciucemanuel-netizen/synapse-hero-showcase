@@ -6,34 +6,34 @@ const steps = [
     title: "Audit & Discovery",
     time: "Week 1",
     description:
-      "We map your current digital presence: brand positioning, content gaps, competitive landscape, and channel opportunities. You get a full audit within 7 days.",
+      "We map your digital presence, brand positioning, content gaps, and channel opportunities. Full audit delivered in 7 days.",
   },
   {
     num: "02",
     title: "Strategy & Roadmap",
     time: "Week 2",
     description:
-      "A 90-day growth plan with clear milestones, channel priorities, content themes, and KPI targets. Every recommendation is data-backed.",
+      "A 90-day growth plan with clear milestones, channel priorities, and KPI targets. Every recommendation is data-backed.",
   },
   {
     num: "03",
     title: "Execute & Ship",
-    time: "Weeks 3-8",
+    time: "Weeks 3–8",
     description:
-      "Content creation, campaign launches, community activation, and distribution. All running simultaneously. Bi-weekly check-ins, weekly reports.",
+      "Content, campaigns, community, and distribution. All running simultaneously. Bi-weekly check-ins, weekly reports.",
   },
   {
     num: "04",
     title: "Optimize & Scale",
     time: "Ongoing",
     description:
-      "Monthly performance reviews. Double down on what works, cut what doesn't, expand into new channels as the engine compounds.",
+      "Monthly performance reviews. Double down on what works, cut what doesn't, expand as the engine compounds.",
   },
 ];
 
 const ProcessSection = () => {
   return (
-    <section className="py-28 bg-[hsl(var(--surface))]">
+    <section className="py-32 bg-[hsl(var(--surface))]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
           <div className="lg:col-span-2">
@@ -48,7 +48,7 @@ const ProcessSection = () => {
                   How We Work
                 </span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-5 leading-[1.1]">
-                  Four phases. Eight weeks to full velocity.
+                  From audit to scale in eight weeks.
                 </h2>
               </motion.div>
             </div>
@@ -69,10 +69,7 @@ const ProcessSection = () => {
                     <span className="font-mono text-xs text-[hsl(var(--sage))] tracking-wider">
                       {step.num}
                     </span>
-                    <h3
-                      className="text-xl font-semibold text-foreground tracking-tight"
-                      style={{ fontFamily: "'Playfair Display', serif" }}
-                    >
+                    <h3 className="text-xl font-semibold text-foreground tracking-tight">
                       {step.title}
                     </h3>
                   </div>
@@ -80,10 +77,7 @@ const ProcessSection = () => {
                     {step.time}
                   </span>
                 </div>
-                <p
-                  className="text-muted-foreground text-sm leading-relaxed pl-8"
-                  style={{ fontFamily: "'Syne', sans-serif" }}
-                >
+                <p className="text-muted-foreground text-sm leading-relaxed pl-8">
                   {step.description}
                 </p>
               </motion.div>

@@ -3,7 +3,7 @@ import { ArrowRight, Mail } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-28 bg-[hsl(var(--surface))]">
+    <section id="contact" className="py-32 bg-foreground">
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-2xl">
           <motion.div
@@ -16,18 +16,18 @@ const ContactSection = () => {
               Get Started
             </span>
             <h2
-              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-5 leading-[1.1]"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-background mb-5 leading-[1.1]"
             >
-              Ready to move?
+              Ready to accelerate?
             </h2>
-            <p className="text-muted-foreground text-base leading-relaxed mb-10 max-w-lg">
-              Tell us what you're building and where you're stuck. We'll get back to you within 24 hours with a clear next step.
+            <p className="text-background/60 text-base leading-relaxed mb-10 max-w-lg">
+              Tell us what you're building. We'll respond within 24 hours with a clear next step.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start gap-4">
               <a
                 href="mailto:hello@thegrowthdesk.com"
-                className="group inline-flex items-center gap-3 px-6 py-3.5 rounded-lg text-sm font-medium bg-foreground text-background hover:bg-foreground/90 transition-all"
+                className="group inline-flex items-center gap-3 px-7 py-4 rounded-lg text-sm font-medium bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-all"
               >
                 <Mail size={16} />
                 hello@thegrowthdesk.com

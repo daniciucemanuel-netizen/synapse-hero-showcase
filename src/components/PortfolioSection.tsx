@@ -7,21 +7,24 @@ const featured = clients.filter((c) => c.featured);
 
 const PortfolioSection = () => {
   return (
-    <section id="work" className="py-20 bg-background">
+    <section id="work" className="py-32 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mb-10"
+          className="mb-12"
         >
-          <span className="text-xs font-mono uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-4 block">
+          <span className="text-xs font-mono uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
             Selected Work
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-3">
             Clients
           </h2>
+          <p className="text-muted-foreground text-base max-w-lg">
+            A selection of recent projects across brand, web, and growth.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -35,7 +38,7 @@ const PortfolioSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.5 }}
-              className="group relative bg-muted/30 rounded-xl p-6 border border-border hover:border-[hsl(var(--sage)/0.5)] transition-all duration-300 hover:scale-[1.01]"
+              className="group relative bg-muted/30 rounded-xl p-6 border border-border hover:border-[hsl(var(--sage)/0.5)] hover:bg-muted/50 transition-all duration-300"
             >
               <div className="flex items-start justify-between mb-3">
                 <div className="flex items-center gap-3">
@@ -74,7 +77,7 @@ const PortfolioSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="mt-10 text-center"
+          className="mt-12 text-center"
         >
           <Link
             to="/work"

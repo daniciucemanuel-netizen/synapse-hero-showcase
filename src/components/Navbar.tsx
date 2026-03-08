@@ -16,10 +16,10 @@ const Navbar = () => {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50"
+      className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl"
     >
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-        <span className="text-foreground font-medium tracking-tight text-lg font-[Space_Grotesk]">
+      <div className="max-w-7xl mx-auto px-6 h-[72px] flex items-center justify-between">
+        <span className="text-foreground font-semibold tracking-tight text-lg font-[Space_Grotesk]">
           The Growth Desk
         </span>
 
@@ -38,14 +38,14 @@ const Navbar = () => {
         <div className="flex items-center gap-3">
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="p-2 rounded-lg border border-border text-muted-foreground hover:text-foreground hover:border-muted-foreground transition-all"
+            className="p-2 rounded-lg text-muted-foreground hover:text-foreground transition-all"
             aria-label="Toggle theme"
           >
             {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
           </button>
           <a
             href="#contact"
-            className="hidden md:inline-flex items-center px-5 py-2 rounded-lg text-sm font-medium border border-border text-foreground hover:border-muted-foreground transition-all"
+            className="hidden md:inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-medium bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-all"
           >
             Get Started
           </a>
