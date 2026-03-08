@@ -13,19 +13,19 @@ const fadeUp = {
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-background overflow-hidden flex flex-col items-center justify-center">
+    <section className="relative bg-background overflow-hidden flex flex-col items-center justify-center min-h-screen">
       <div className="absolute bottom-[-35vh] left-0 right-0 h-[80vh] z-0 pointer-events-none">
         <VideoPlayer />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-20 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <motion.h1
           custom={1}
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-[72px] font-bold tracking-tight leading-[1.05] text-foreground mb-6"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold tracking-tight leading-[1.05] text-foreground mb-6"
         >
           We build brands that <span className="text-[hsl(var(--sage))]">grow.</span>
         </motion.h1>
@@ -35,7 +35,7 @@ const HeroSection = () => {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
+          className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed"
         >
           Brand, content, SEO, and distribution for companies that need traction, not slide decks.
         </motion.p>
