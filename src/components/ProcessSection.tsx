@@ -77,7 +77,7 @@ const ProcessSection = () => {
                     {step.time}
                   </span>
                 </div>
-                <p className="text-muted-foreground text-sm leading-relaxed pl-8">
+                <p className="text-muted-foreground text-sm leading-relaxed pl-10 mt-1">
                   {step.description}
                 </p>
               </motion.div>

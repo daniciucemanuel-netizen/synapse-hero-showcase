@@ -34,6 +34,9 @@ const ContactSection = () => {
                 <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
               </a>
             </div>
+            <p className="text-background/30 text-xs mt-6 tracking-wide">
+              No commitment. No pitch deck required.
+            </p>
           </motion.div>
         </div>
       </div>

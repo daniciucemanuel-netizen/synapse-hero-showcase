@@ -38,7 +38,7 @@ const ResultsSection = () => {
               transition={{ delay: i * 0.08, duration: 0.5 }}
               className="bg-background p-10 md:p-14"
             >
-              <span className="font-mono text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[hsl(var(--sage))] block mb-3">
+              <span className="font-mono text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-[hsl(var(--sage))] block mb-4">
                 {metric.value}
               </span>
               <p className="text-sm text-muted-foreground leading-relaxed">

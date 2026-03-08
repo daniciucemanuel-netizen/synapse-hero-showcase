@@ -65,7 +65,7 @@ const ServicesSection = () => {
               <h3 className="text-lg font-semibold text-foreground mt-4 mb-3 tracking-tight leading-snug">
                 {service.title}
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-5">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                 {service.description}
               </p>
               <div className="flex flex-wrap gap-1.5">
