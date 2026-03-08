@@ -57,7 +57,7 @@ const PortfolioSection = () => {
           <span className="text-xs font-mono uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-4 block">
             Selected Work
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
             Clients
           </h2>
         </motion.div>
