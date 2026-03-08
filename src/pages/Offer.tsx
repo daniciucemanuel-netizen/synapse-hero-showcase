@@ -128,7 +128,7 @@ const Offer = () => {
 
         {/* 4. What You Get */}
         <motion.section {...fade(0.2)}>
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#1A4D2E] mb-3 block">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
             Deliverables
           </span>
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-8">
