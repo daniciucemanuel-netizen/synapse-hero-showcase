@@ -1,10 +1,31 @@
 import { motion } from "framer-motion";
 
-const technologies = [
-  "Gemini", "Antigravity", "Claude", "ChatGPT", "Grok", "Lovable",
-  "Stripe", "Vercel", "Figma", "Notion", "Framer", "Webflow", "Canva",
-  "OpenAI", "Supabase", "Firebase", "LangChain", "React", "Next.js",
-  "Node.js", "Tailwind CSS", "PostgreSQL",
+const categories = [
+  {
+    name: "AI",
+    dotColor: "bg-emerald-500",
+    tools: ["Claude", "ChatGPT", "Gemini", "Grok", "OpenAI", "LangChain", "Antigravity"],
+  },
+  {
+    name: "Development",
+    dotColor: "bg-blue-500",
+    tools: ["React", "Next.js", "Node.js", "Tailwind CSS", "PostgreSQL", "Supabase", "Firebase"],
+  },
+  {
+    name: "Design",
+    dotColor: "bg-purple-500",
+    tools: ["Figma", "Framer", "Webflow", "Canva"],
+  },
+  {
+    name: "Distribution",
+    dotColor: "bg-amber-500",
+    tools: ["X/Twitter", "CoinMarketCap", "Medium", "Substack", "LinkedIn", "Reddit"],
+  },
+  {
+    name: "Platforms",
+    dotColor: "bg-gray-400",
+    tools: ["Vercel", "Lovable", "Stripe", "Notion"],
+  },
 ];
 
 const TechStackSection = () => {
@@ -16,26 +37,35 @@ const TechStackSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center text-xs uppercase tracking-[0.2em] text-muted-foreground mb-10"
+          className="text-center text-xs uppercase tracking-[0.2em] text-muted-foreground mb-12"
         >
           Technologies We Use
         </motion.p>
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="flex items-center justify-center gap-x-8 gap-y-4 flex-wrap max-w-4xl mx-auto"
-        >
-          {technologies.map((tech) => (
-            <span
-              key={tech}
-              className="text-muted-foreground/50 text-xs font-medium tracking-widest uppercase"
+        <div className="max-w-4xl mx-auto space-y-6">
+          {categories.map((cat, ci) => (
+            <motion.div
+              key={cat.name}
+              initial={{ opacity: 0, y: 12 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: ci * 0.08 }}
+              className="flex flex-wrap items-center gap-2"
             >
-              {tech}
-            </span>
+              <span className="flex items-center gap-1.5 text-[11px] uppercase tracking-[0.15em] text-muted-foreground font-medium mr-2 min-w-[100px]">
+                <span className={`w-2 h-2 rounded-full ${cat.dotColor} shrink-0`} />
+                {cat.name}
+              </span>
+              {cat.tools.map((tool) => (
+                <span
+                  key={tool}
+                  className="text-[11px] font-medium px-2.5 py-1 rounded-full bg-muted text-muted-foreground"
+                >
+                  {tool}
+                </span>
+              ))}
+            </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );
