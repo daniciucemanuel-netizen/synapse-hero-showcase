@@ -3,7 +3,7 @@ import { ArrowRight, Mail } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-32 bg-foreground">
+    <section id="contact" className="py-40 bg-foreground">
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-2xl">
           <motion.div
