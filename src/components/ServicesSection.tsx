@@ -57,7 +57,7 @@ const ServicesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="border-t-2 border-t-[hsl(var(--sage))] p-6 pt-8 border border-border transition-colors duration-200 hover:bg-muted/50"
+              className="border-t-2 border-t-[hsl(var(--sage))] p-8 pt-10 min-h-[280px] transition-colors duration-200 hover:bg-muted/30"
             >
               <span className="font-mono text-xs text-muted-foreground tracking-wider">
                 {service.num}
