@@ -27,13 +27,13 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-5">
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                <Linkedin size={18} />
+                <Linkedin size={16} />
               </a>
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                <Twitter size={18} />
+                <Twitter size={16} />
               </a>
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                <Instagram size={18} />
+                <Instagram size={16} />
               </a>
             </div>
           </div>
