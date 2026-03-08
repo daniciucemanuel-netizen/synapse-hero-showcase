@@ -115,7 +115,7 @@ const Offer = () => {
                   <ul className="space-y-1.5">
                     {t.items.map((item) => (
                       <li key={item} className="text-sm text-muted-foreground flex items-center gap-2">
-                        <span className="w-1 h-1 rounded-full bg-[#1A4D2E] shrink-0" />
+                        <span className="w-1 h-1 rounded-full bg-[hsl(var(--sage))] shrink-0" />
                         {item}
                       </li>
                     ))}
