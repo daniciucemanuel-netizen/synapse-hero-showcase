@@ -1,91 +1,11 @@
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { clients } from "@/data/clients";
 
-const clients = [
-  {
-    name: "Surflux",
-    url: "https://surflux.dev",
-    description: "Took an existing product with no branding and built the brand, website, and social media presence. Managed partnership discussions and go-to-market strategy.",
-    services: ["Branding", "Web Development", "Social Media", "GTM Strategy"],
-  },
-  {
-    name: "LoadBetter",
-    url: "https://loadbetter.com",
-    description: "Website redesign, brand positioning, social media strategy, SEO, and content development.",
-    services: ["Web Design", "SEO", "Content", "Brand Strategy"],
-  },
-  {
-    name: "Vino si Vezi",
-    url: "https://vinosivezi.ro",
-    description: "Built the platform from the ground up including landing pages, payments, and a volunteer management dashboard.",
-    services: ["Web Development", "Payments", "Dashboard", "UX Design"],
-  },
-  {
-    name: "Meridian Freight",
-    url: "https://meridian-freight-smart.lovable.app",
-    description: "Full concept build — branding, logo design, and website, all created from scratch.",
-    tag: "Concept",
-    services: ["Branding", "Logo Design", "Web Development"],
-  },
-  {
-    name: "Blanc Smile Studio",
-    url: "https://blanc-smile-studio.lovable.app",
-    description: "Full concept build — branding, logo design, and website, all created from scratch.",
-    tag: "Concept",
-    services: ["Branding", "Logo Design", "Web Development"],
-  },
-  {
-    name: "Maison Claret",
-    url: "https://maison-story-builder.lovable.app",
-    description: "Built the website, branding, logo, and design from scratch. Payments integration and booking system ready to connect.",
-    tag: "Concept",
-    services: ["Branding", "Logo Design", "Web Development", "Design"],
-  },
-  {
-    name: "Sovereign Motors",
-    url: "https://elevate-the-drive-app.lovable.app",
-    description: "Built the website, branding, logo, and design. Includes a backend for managing the car collection. Contact form and CRM integration ready.",
-    tag: "Concept",
-    services: ["Branding", "Logo Design", "Web Development", "Backend"],
-  },
-  {
-    name: "Atheneum Medical",
-    url: "https://atheneum-elegance.lovable.app",
-    description: "Built the website, branding, logo, and design. CRM integration available for patient data management.",
-    tag: "Concept",
-    services: ["Branding", "Logo Design", "Web Development", "Design"],
-  },
-  {
-    name: "Form & Void Studio",
-    url: "https://space-is-feeling.lovable.app",
-    description: "Built the website, branding, logo, and design from scratch.",
-    tag: "Concept",
-    services: ["Branding", "Logo Design", "Web Development", "Design"],
-  },
-  {
-    name: "Vault Motors",
-    url: "https://vault-drive-suite.lovable.app",
-    description: "Built the website, branding, logo, and design. Includes a backend for managing car inventory. Contact form and CRM integration ready.",
-    tag: "Concept",
-    services: ["Branding", "Logo Design", "Web Development", "Backend"],
-  },
-  {
-    name: "Ember & Oak",
-    url: "https://flame-to-table-dev.lovable.app",
-    description: "Built the website, branding, logo, and design. Backend ready for table reservations with custom rules and manual registrations.",
-    tag: "Concept",
-    services: ["Branding", "Logo Design", "Web Development", "Backend"],
-  },
-];
+const featured = clients.filter((c) => c.featured);
 
 const PortfolioSection = () => {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
-  const handleClick = (index: number) => {
-    setActiveIndex(activeIndex === index ? null : index);
-  };
-
   return (
     <section id="work" className="py-20 bg-background">
       <div className="max-w-7xl mx-auto px-6">
@@ -104,88 +24,66 @@ const PortfolioSection = () => {
           </h2>
         </motion.div>
 
-        <div className="border-t border-border">
-          {clients.map((client, i) => (
-            <motion.div
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {featured.map((client, i) => (
+            <motion.a
               key={client.name}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              href={client.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.05, duration: 0.4 }}
+              transition={{ delay: i * 0.08, duration: 0.5 }}
+              className="group relative bg-muted/30 rounded-xl p-6 border border-border hover:border-[hsl(var(--sage)/0.5)] transition-all duration-300 hover:scale-[1.01]"
             >
-              <button
-                onClick={() => handleClick(i)}
-                className="w-full text-left border-b border-border group"
-              >
-                <div className="flex items-center justify-between py-4 md:py-5 transition-transform duration-300 group-hover:translate-x-2">
-                  <div className="flex items-center gap-3">
-                    <h3 className="text-xl md:text-2xl font-semibold tracking-tight text-foreground transition-colors duration-300 group-hover:text-[hsl(var(--sage))]">
-                      {client.name}
-                    </h3>
-                    {client.tag && (
-                      <span className="text-[10px] font-mono uppercase tracking-[0.15em] text-muted-foreground border border-border rounded-full px-3 py-1">
-                        {client.tag}
-                      </span>
-                    )}
-                  </div>
-                  <div className="flex items-center gap-4">
-                    <div className="hidden md:flex items-center gap-2">
-                      {client.services.slice(0, 3).map((service) => (
-                        <span
-                          key={service}
-                          className="text-xs text-muted-foreground"
-                        >
-                          {service}
-                        </span>
-                      ))}
-                    </div>
-                    <ArrowUpRight className="w-4 h-4 text-muted-foreground transition-all duration-300 group-hover:text-[hsl(var(--sage))] group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                  </div>
+              <div className="flex items-start justify-between mb-3">
+                <div className="flex items-center gap-3">
+                  <h3 className="text-2xl font-semibold tracking-tight text-foreground transition-colors duration-300 group-hover:text-[hsl(var(--sage))] font-[Space_Grotesk]">
+                    {client.name}
+                  </h3>
+                  {client.tag && (
+                    <span className="text-[10px] font-mono uppercase tracking-[0.15em] text-muted-foreground border border-border rounded-full px-3 py-1">
+                      {client.tag}
+                    </span>
+                  )}
                 </div>
-              </button>
+                <ArrowUpRight className="w-5 h-5 text-muted-foreground transition-all duration-300 group-hover:text-[hsl(var(--sage))] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0 mt-1" />
+              </div>
 
-              <AnimatePresence mode="wait">
-                {activeIndex === i && (
-                  <motion.div
-                    key={`detail-${i}`}
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: "auto" }}
-                    exit={{ opacity: 0, height: 0 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
-                    className="overflow-hidden"
+              <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-2">
+                {client.description}
+              </p>
+
+              <div className="flex flex-wrap gap-2">
+                {client.services.map((service) => (
+                  <span
+                    key={service}
+                    className="text-xs text-muted-foreground bg-background rounded-full px-3 py-1 border border-border"
                   >
-                     <div className="pb-5 md:pb-6 pl-0 md:pl-2">
-                       <div className="bg-muted/30 rounded-xl p-6 md:p-8 max-w-3xl">
-                        <p className="text-base text-muted-foreground leading-relaxed mb-6">
-                          {client.description}
-                        </p>
-                        <div className="flex flex-wrap gap-2 mb-6">
-                          {client.services.map((service) => (
-                            <span
-                              key={service}
-                              className="text-xs text-muted-foreground bg-background rounded-full px-3 py-1 border border-border"
-                            >
-                              {service}
-                            </span>
-                          ))}
-                        </div>
-                        <a
-                          href={client.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-[hsl(var(--sage))] transition-colors"
-                        >
-                          {client.url.replace("https://", "")}
-                          <ArrowUpRight className="w-4 h-4" />
-                        </a>
-                      </div>
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </motion.div>
+                    {service}
+                  </span>
+                ))}
+              </div>
+            </motion.a>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          className="mt-10 text-center"
+        >
+          <Link
+            to="/work"
+            className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+          >
+            View all work
+            <ArrowUpRight className="w-4 h-4" />
+          </Link>
+        </motion.div>
       </div>
     </section>
   );
