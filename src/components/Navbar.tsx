@@ -5,7 +5,6 @@ import { useTheme } from "next-themes";
 const navLinks = [
   { label: "Services", href: "#services" },
   { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -48,7 +47,7 @@ const Navbar = () => {
             href="#contact"
             className="hidden md:inline-flex items-center px-5 py-2 rounded-lg text-sm font-medium border border-border text-foreground hover:border-muted-foreground transition-all"
           >
-            Let's Talk
+            Get Started
           </a>
         </div>
       </div>

@@ -13,13 +13,13 @@ const fadeUp = {
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-background overflow-hidden flex flex-col items-center justify-center">
+    <section className="relative bg-background overflow-hidden flex flex-col items-center justify-center">
       <div className="absolute bottom-[-35vh] left-0 right-0 h-[80vh] z-0 pointer-events-none">
         <VideoPlayer />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-16 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-20 text-center">
         <motion.h1
           custom={1}
           variants={fadeUp}
@@ -27,9 +27,9 @@ const HeroSection = () => {
           animate="visible"
           className="text-5xl sm:text-6xl md:text-7xl lg:text-[72px] font-bold tracking-tight leading-[1.05] text-foreground mb-6"
         >
-          Your Growth Engine.
+          We build brands that grow.
           <br />
-          <span className="gradient-text">AI-Powered.</span>
+          <span className="text-[hsl(var(--sage))]">Then we grow them.</span>
         </motion.h1>
 
         <motion.p
@@ -39,7 +39,7 @@ const HeroSection = () => {
           animate="visible"
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          We combine AI tools with sharp creative to build brands, rank pages, and drive revenue.
+          Brand, content, SEO, and distribution for companies that need traction, not slide decks.
         </motion.p>
 
         <motion.div
@@ -53,7 +53,7 @@ const HeroSection = () => {
             href="#contact"
             className="group px-8 py-3.5 rounded-lg text-sm font-medium bg-foreground text-background hover:bg-foreground/90 transition-all inline-flex items-center gap-2"
           >
-            Book a Call
+            Get Started
             <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
           </a>
           <a
