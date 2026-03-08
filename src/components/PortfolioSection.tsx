@@ -35,6 +35,48 @@ const clients = [
     tag: "Concept",
     services: ["Branding", "Logo Design", "Web Development"],
   },
+  {
+    name: "Maison Claret",
+    url: "https://maison-story-builder.lovable.app",
+    description: "Built the website, branding, logo, and design from scratch. Payments integration and booking system ready to connect.",
+    tag: "Concept",
+    services: ["Branding", "Logo Design", "Web Development", "Design"],
+  },
+  {
+    name: "Sovereign Motors",
+    url: "https://elevate-the-drive-app.lovable.app",
+    description: "Built the website, branding, logo, and design. Includes a backend for managing the car collection. Contact form and CRM integration ready.",
+    tag: "Concept",
+    services: ["Branding", "Logo Design", "Web Development", "Backend"],
+  },
+  {
+    name: "Atheneum Medical",
+    url: "https://atheneum-elegance.lovable.app",
+    description: "Built the website, branding, logo, and design. CRM integration available for patient data management.",
+    tag: "Concept",
+    services: ["Branding", "Logo Design", "Web Development", "Design"],
+  },
+  {
+    name: "Form & Void Studio",
+    url: "https://space-is-feeling.lovable.app",
+    description: "Built the website, branding, logo, and design from scratch.",
+    tag: "Concept",
+    services: ["Branding", "Logo Design", "Web Development", "Design"],
+  },
+  {
+    name: "Vault Motors",
+    url: "https://vault-drive-suite.lovable.app",
+    description: "Built the website, branding, logo, and design. Includes a backend for managing car inventory. Contact form and CRM integration ready.",
+    tag: "Concept",
+    services: ["Branding", "Logo Design", "Web Development", "Backend"],
+  },
+  {
+    name: "Ember & Oak",
+    url: "https://flame-to-table-dev.lovable.app",
+    description: "Built the website, branding, logo, and design. Backend ready for table reservations with custom rules and manual registrations.",
+    tag: "Concept",
+    services: ["Branding", "Logo Design", "Web Development", "Backend"],
+  },
 ];
 
 const PortfolioSection = () => {
