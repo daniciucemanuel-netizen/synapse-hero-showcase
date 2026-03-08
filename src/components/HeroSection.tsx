@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-transparent" />
       </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-32 pb-20 text-center">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         <motion.h1
           custom={1}
           variants={fadeUp}
