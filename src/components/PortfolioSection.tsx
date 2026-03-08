@@ -25,14 +25,14 @@ const clients = [
     name: "Meridian Freight",
     url: "https://meridian-freight-smart.lovable.app",
     description: "Full concept build — branding, logo design, and website, all created from scratch.",
-    tag: "Concept Project",
+    tag: "Concept",
     services: ["Branding", "Logo Design", "Web Development"],
   },
   {
     name: "Blanc Smile Studio",
     url: "https://blanc-smile-studio.lovable.app",
     description: "Full concept build — branding, logo design, and website, all created from scratch.",
-    tag: "Concept Project",
+    tag: "Concept",
     services: ["Branding", "Logo Design", "Web Development"],
   },
 ];
@@ -44,8 +44,6 @@ const PortfolioSection = () => {
     setActiveIndex(activeIndex === index ? null : index);
   };
 
-  const activeClient = activeIndex !== null ? clients[activeIndex] : null;
-
   return (
     <section id="work" className="py-32 bg-background">
       <div className="max-w-7xl mx-auto px-6">
@@ -56,84 +54,96 @@ const PortfolioSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-4">
-            Selected Clients
+          <span className="text-xs font-mono uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-4 block">
+            Selected Work
+          </span>
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+            Clients
           </h2>
-          <p className="text-muted-foreground text-lg max-w-xl">
-            A selection of brands we've helped build and grow.
-          </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+        <div className="border-t border-border">
           {clients.map((client, i) => (
-            <motion.button
+            <motion.div
               key={client.name}
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05, duration: 0.4 }}
-              onClick={() => handleClick(i)}
-              className={`relative text-left rounded-xl border px-6 py-8 transition-all duration-300 cursor-pointer ${
-                activeIndex === i
-                  ? "border-primary/40 bg-primary/5 text-foreground"
-                  : "border-border text-muted-foreground hover:text-foreground hover:border-muted-foreground/40"
-              }`}
             >
-              <span className="text-2xl md:text-3xl font-bold tracking-tight leading-tight block">
-                {client.name}
-              </span>
-              {client.tag && (
-                <span className="text-[10px] uppercase tracking-wider text-muted-foreground mt-2 inline-block">
-                  {client.tag}
-                </span>
-              )}
-              {activeIndex === i && (
-                <motion.div
-                  layoutId="active-indicator"
-                  className="absolute bottom-0 left-6 right-6 h-0.5 bg-primary rounded-full"
-                />
-              )}
-            </motion.button>
+              <button
+                onClick={() => handleClick(i)}
+                className="w-full text-left border-b border-border group"
+              >
+                <div className="flex items-center justify-between py-8 md:py-10 transition-transform duration-300 group-hover:translate-x-2">
+                  <div className="flex items-center gap-4">
+                    <h3 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground transition-colors duration-300 group-hover:text-[hsl(var(--sage))]">
+                      {client.name}
+                    </h3>
+                    {client.tag && (
+                      <span className="text-[10px] font-mono uppercase tracking-[0.15em] text-muted-foreground border border-border rounded-full px-3 py-1">
+                        {client.tag}
+                      </span>
+                    )}
+                  </div>
+                  <div className="flex items-center gap-4">
+                    <div className="hidden md:flex items-center gap-2">
+                      {client.services.slice(0, 3).map((service) => (
+                        <span
+                          key={service}
+                          className="text-xs text-muted-foreground"
+                        >
+                          {service}
+                        </span>
+                      ))}
+                    </div>
+                    <ArrowUpRight className="w-5 h-5 text-muted-foreground transition-all duration-300 group-hover:text-[hsl(var(--sage))] group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                  </div>
+                </div>
+              </button>
+
+              <AnimatePresence mode="wait">
+                {activeIndex === i && (
+                  <motion.div
+                    key={`detail-${i}`}
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3, ease: "easeInOut" }}
+                    className="overflow-hidden"
+                  >
+                    <div className="pb-8 md:pb-10 pl-0 md:pl-2">
+                      <div className="bg-muted/30 rounded-xl p-8 md:p-10 max-w-3xl">
+                        <p className="text-base text-muted-foreground leading-relaxed mb-6">
+                          {client.description}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mb-6">
+                          {client.services.map((service) => (
+                            <span
+                              key={service}
+                              className="text-xs text-muted-foreground bg-background rounded-full px-3 py-1 border border-border"
+                            >
+                              {service}
+                            </span>
+                          ))}
+                        </div>
+                        <a
+                          href={client.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-[hsl(var(--sage))] transition-colors"
+                        >
+                          {client.url.replace("https://", "")}
+                          <ArrowUpRight className="w-4 h-4" />
+                        </a>
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
           ))}
         </div>
-
-        <AnimatePresence mode="wait">
-          {activeClient && (
-            <motion.div
-              key={activeIndex}
-              initial={{ opacity: 0, height: 0 }}
-              animate={{ opacity: 1, height: "auto" }}
-              exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
-              className="overflow-hidden"
-            >
-              <div className="mt-4 rounded-xl border border-border p-8 md:p-10">
-                <p className="text-base text-muted-foreground leading-relaxed mb-6 max-w-2xl">
-                  {activeClient.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {activeClient.services.map((service) => (
-                    <span
-                      key={service}
-                      className="text-xs text-muted-foreground bg-muted rounded-full px-3 py-1"
-                    >
-                      {service}
-                    </span>
-                  ))}
-                </div>
-                <a
-                  href={activeClient.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors"
-                >
-                  {activeClient.url.replace("https://", "")}
-                  <ArrowUpRight className="w-4 h-4" />
-                </a>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
       </div>
     </section>
   );
