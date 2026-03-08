@@ -112,8 +112,8 @@ const PortfolioSection = () => {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="overflow-hidden"
                   >
-                    <div className="pb-8 md:pb-10 pl-0 md:pl-2">
-                      <div className="bg-muted/30 rounded-xl p-8 md:p-10 max-w-3xl">
+                     <div className="pb-5 md:pb-6 pl-0 md:pl-2">
+                       <div className="bg-muted/30 rounded-xl p-6 md:p-8 max-w-3xl">
                         <p className="text-base text-muted-foreground leading-relaxed mb-6">
                           {client.description}
                         </p>
