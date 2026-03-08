@@ -38,7 +38,7 @@ const PortfolioSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.5 }}
-              className="group relative bg-muted/30 rounded-xl p-6 border border-border hover:border-[hsl(var(--sage)/0.5)] hover:bg-muted/50 transition-all duration-300"
+              className="group relative bg-muted/30 rounded-xl p-8 border border-border hover:border-[hsl(var(--sage)/0.5)] hover:bg-muted/50 transition-all duration-300"
             >
               <div className="flex items-start justify-between mb-3">
                 <div className="flex items-center gap-3">
