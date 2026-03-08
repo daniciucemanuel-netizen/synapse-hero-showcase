@@ -7,6 +7,7 @@ import { ThemeProvider } from "next-themes";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Offer from "./pages/Offer";
+import Work from "./pages/Work";
 
 const queryClient = new QueryClient();
 
