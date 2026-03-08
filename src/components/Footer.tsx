@@ -2,9 +2,9 @@ import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-16 bg-background border-t border-border">
+    <footer className="py-20 bg-background border-t border-border">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-14">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
               <span className="text-foreground font-semibold tracking-tight text-lg font-[Space_Grotesk] block mb-1">
