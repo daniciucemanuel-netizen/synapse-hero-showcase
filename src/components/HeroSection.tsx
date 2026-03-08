@@ -37,7 +37,7 @@ const HeroSection = () => {
           animate="visible"
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed"
         >
-          Brand, content, SEO, and distribution for companies that need traction, not slide decks.
+          Strategy, content, and distribution for companies that need traction.
         </motion.p>
 
         <motion.div
