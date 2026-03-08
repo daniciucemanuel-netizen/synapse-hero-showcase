@@ -42,7 +42,7 @@ const PortfolioSection = () => {
             >
               <div className="flex items-start justify-between mb-3">
                 <div className="flex items-center gap-3">
-                  <h3 className="text-2xl font-semibold tracking-tight text-foreground transition-colors duration-300 group-hover:text-[hsl(var(--sage))] font-[Space_Grotesk]">
+                  <h3 className="text-xl font-semibold tracking-tight text-foreground transition-colors duration-300 group-hover:text-[hsl(var(--sage))] font-[Space_Grotesk]">
                     {client.name}
                   </h3>
                   {client.tag && (
