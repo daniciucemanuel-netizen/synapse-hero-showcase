@@ -27,9 +27,7 @@ const HeroSection = () => {
           animate="visible"
           className="text-5xl sm:text-6xl md:text-7xl lg:text-[72px] font-bold tracking-tight leading-[1.05] text-foreground mb-6"
         >
-          We build brands that grow.
-          <br />
-          <span className="text-[hsl(var(--sage))]">Then we grow them.</span>
+          We build brands that <span className="text-[hsl(var(--sage))]">grow.</span>
         </motion.h1>
 
         <motion.p
