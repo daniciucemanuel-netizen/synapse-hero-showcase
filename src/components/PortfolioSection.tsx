@@ -77,7 +77,7 @@ const PortfolioSection = () => {
               >
                 <div className="flex items-center justify-between py-5 md:py-6 transition-transform duration-300 group-hover:translate-x-2">
                   <div className="flex items-center gap-4">
-                    <h3 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground transition-colors duration-300 group-hover:text-[hsl(var(--sage))]">
+                    <h3 className="text-2xl md:text-4xl font-bold tracking-tight text-foreground transition-colors duration-300 group-hover:text-[hsl(var(--sage))]">
                       {client.name}
                     </h3>
                     {client.tag && (
