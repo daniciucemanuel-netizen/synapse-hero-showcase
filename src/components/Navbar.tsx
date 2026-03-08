@@ -28,7 +28,7 @@ const Navbar = () => {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-[13px] uppercase tracking-wide text-muted-foreground hover:text-foreground transition-colors"
             >
               {link.label}
             </a>
@@ -45,7 +45,7 @@ const Navbar = () => {
           </button>
           <a
             href="#contact"
-            className="hidden md:inline-flex items-center px-5 py-2.5 rounded-lg text-sm font-medium bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-all"
+            className="hidden md:inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-all"
           >
             Get Started
           </a>

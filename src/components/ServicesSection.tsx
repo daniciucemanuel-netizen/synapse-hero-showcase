@@ -36,7 +36,7 @@ const ServicesSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-20"
         >
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
             Capabilities
@@ -57,7 +57,7 @@ const ServicesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="border-t-2 border-t-[hsl(var(--sage))] p-6 pt-8 border border-border transition-colors duration-200 hover:bg-muted/50"
+              className="border-t-2 border-t-[hsl(var(--sage))] p-8 pt-10 min-h-[280px] transition-colors duration-200 hover:bg-muted/30"
             >
               <span className="font-mono text-xs text-muted-foreground tracking-wider">
                 {service.num}
@@ -65,7 +65,7 @@ const ServicesSection = () => {
               <h3 className="text-lg font-semibold text-foreground mt-4 mb-3 tracking-tight leading-snug">
                 {service.title}
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-5">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
                 {service.description}
               </p>
               <div className="flex flex-wrap gap-1.5">

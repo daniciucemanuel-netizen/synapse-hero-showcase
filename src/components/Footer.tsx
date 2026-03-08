@@ -2,9 +2,9 @@ import { Linkedin, Twitter, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="py-16 bg-background border-t border-border">
+    <footer className="py-20 bg-background border-t border-border">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-14">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
               <span className="text-foreground font-semibold tracking-tight text-lg font-[Space_Grotesk] block mb-1">
@@ -27,13 +27,13 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-5">
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                <Linkedin size={18} />
+                <Linkedin size={16} />
               </a>
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                <Twitter size={18} />
+                <Twitter size={16} />
               </a>
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                <Instagram size={18} />
+                <Instagram size={16} />
               </a>
             </div>
           </div>

@@ -11,7 +11,7 @@ const metrics = [
 
 const ResultsSection = () => {
   return (
-    <section id="results" className="py-32 bg-background">
+    <section id="results" className="py-32 bg-[hsl(var(--surface))]">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -36,9 +36,9 @@ const ResultsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.08, duration: 0.5 }}
-              className="bg-[hsl(var(--surface))] p-8 md:p-10 hover:bg-muted/50 transition-colors duration-200"
+              className="bg-background p-10 md:p-14"
             >
-              <span className="font-mono text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[hsl(var(--sage))] block mb-3">
+              <span className="font-mono text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-[hsl(var(--sage))] block mb-4">
                 {metric.value}
               </span>
               <p className="text-sm text-muted-foreground leading-relaxed">

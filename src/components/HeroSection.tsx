@@ -25,7 +25,7 @@ const HeroSection = () => {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold tracking-tight leading-[1.05] text-foreground mb-6"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-[80px] font-bold tracking-tight leading-[1.05] text-foreground mb-8"
         >
           Your growth engine.<br />
           <span className="text-[hsl(var(--sage))]">AI-Powered.</span>
@@ -36,7 +36,7 @@ const HeroSection = () => {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-14 leading-relaxed"
+          className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-16 leading-relaxed tracking-[-0.02em]"
         >
           Strategy, content, and distribution for companies that need traction.
         </motion.p>
@@ -50,14 +50,14 @@ const HeroSection = () => {
         >
           <a
             href="#contact"
-            className="group px-9 py-4 rounded-lg text-sm font-medium bg-foreground text-background hover:bg-foreground/90 transition-all inline-flex items-center gap-2"
+            className="group px-10 py-4 rounded-full text-sm font-medium bg-foreground text-background hover:bg-foreground/90 transition-all inline-flex items-center gap-2"
           >
             Get Started
             <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
           </a>
           <a
             href="#work"
-            className="px-9 py-4 rounded-lg text-sm font-medium border border-border text-foreground hover:border-muted-foreground transition-all"
+            className="px-10 py-4 rounded-full text-sm font-medium border border-border text-foreground hover:border-muted-foreground transition-all"
           >
             See Our Work
           </a>

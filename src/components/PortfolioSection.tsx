@@ -14,7 +14,7 @@ const PortfolioSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mb-12"
+          className="mb-16"
         >
           <span className="text-xs font-mono uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
             Selected Work
@@ -27,7 +27,7 @@ const PortfolioSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {featured.map((client, i) => (
             <motion.a
               key={client.name}
@@ -38,11 +38,11 @@ const PortfolioSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.5 }}
-              className="group relative bg-muted/30 rounded-xl p-6 border border-border hover:border-[hsl(var(--sage)/0.5)] hover:bg-muted/50 transition-all duration-300"
+              className="group relative bg-muted/30 rounded-xl p-8 border border-border hover:border-[hsl(var(--sage)/0.5)] hover:bg-muted/50 transition-all duration-300"
             >
               <div className="flex items-start justify-between mb-3">
                 <div className="flex items-center gap-3">
-                  <h3 className="text-2xl font-semibold tracking-tight text-foreground transition-colors duration-300 group-hover:text-[hsl(var(--sage))] font-[Space_Grotesk]">
+                  <h3 className="text-xl font-semibold tracking-tight text-foreground transition-colors duration-300 group-hover:text-[hsl(var(--sage))] font-[Space_Grotesk]">
                     {client.name}
                   </h3>
                   {client.tag && (
@@ -54,7 +54,7 @@ const PortfolioSection = () => {
                 <ArrowUpRight className="w-5 h-5 text-muted-foreground transition-all duration-300 group-hover:text-[hsl(var(--sage))] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 shrink-0 mt-1" />
               </div>
 
-              <p className="text-sm text-muted-foreground leading-relaxed mb-4 line-clamp-2">
+              <p className="text-sm text-muted-foreground leading-relaxed mb-6 line-clamp-2">
                 {client.description}
               </p>
 
@@ -81,7 +81,7 @@ const PortfolioSection = () => {
         >
           <Link
             to="/work"
-            className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors underline-offset-4 hover:underline"
           >
             View all work
             <ArrowUpRight className="w-4 h-4" />
