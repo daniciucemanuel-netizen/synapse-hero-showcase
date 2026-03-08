@@ -105,7 +105,7 @@ const Offer = () => {
             {timeline.map((t) => (
               <div key={t.phase} className="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-6 py-8 border-b border-border">
                 <div>
-                  <span className="font-mono text-xs text-[#1A4D2E] tracking-wider block mb-1">{t.phase}</span>
+                  <span className="font-mono text-xs text-[hsl(var(--sage))] tracking-wider block mb-1">{t.phase}</span>
                   <span className="text-[11px] font-medium px-2.5 py-1 rounded-full border border-border text-muted-foreground">{t.period}</span>
                 </div>
                 <div>
