@@ -45,7 +45,7 @@ const ProcessSection = () => {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#1A4D2E] mb-3 block">
+                <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
                   The Process
                 </span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-5 leading-[1.1]">
