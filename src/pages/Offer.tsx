@@ -61,7 +61,7 @@ const Offer = () => {
       <main className="max-w-4xl mx-auto px-6 py-16 space-y-24">
         {/* 1. Hero */}
         <motion.section {...fade()}>
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#1A4D2E] mb-4 block">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-4 block">
             Growth Proposal
           </span>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-6 leading-[1.1]" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
