@@ -13,7 +13,7 @@ const fadeUp = {
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-background overflow-hidden flex flex-col items-center justify-center">
+    <section className="relative bg-background overflow-hidden flex flex-col items-center justify-center min-h-screen">
       <div className="absolute bottom-[-35vh] left-0 right-0 h-[80vh] z-0 pointer-events-none">
         <VideoPlayer />
         <div className="absolute inset-0 bg-gradient-to-b from-background via-background/60 to-transparent" />
