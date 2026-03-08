@@ -46,7 +46,7 @@ const pricing = [
 
 const Offer = () => {
   return (
-    <div className="min-h-screen bg-[#FAFAF7]">
+    <div className="min-h-screen bg-[hsl(var(--surface))]">
       {/* Header */}
       <header className="max-w-4xl mx-auto px-6 py-8 flex items-center justify-between border-b border-border">
         <span className="font-semibold text-foreground tracking-tight text-lg" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
@@ -61,7 +61,7 @@ const Offer = () => {
       <main className="max-w-4xl mx-auto px-6 py-16 space-y-24">
         {/* 1. Hero */}
         <motion.section {...fade()}>
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#1A4D2E] mb-4 block">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-4 block">
             Growth Proposal
           </span>
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-6 leading-[1.1]" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
@@ -74,7 +74,7 @@ const Offer = () => {
 
         {/* 2. What We'll Do */}
         <motion.section {...fade(0.1)}>
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#1A4D2E] mb-3 block">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
             Scope of Work
           </span>
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-8">
@@ -86,7 +86,7 @@ const Offer = () => {
                 key={d}
                 className={`flex items-center gap-3 py-4 px-1 border-b border-border ${i % 2 === 0 ? "md:border-r" : ""}`}
               >
-                <span className="font-mono text-xs text-[#1A4D2E]">{String(i + 1).padStart(2, "0")}</span>
+                <span className="font-mono text-xs text-[hsl(var(--sage))]">{String(i + 1).padStart(2, "0")}</span>
                 <span className="text-sm text-foreground font-medium">{d}</span>
               </div>
             ))}
@@ -95,7 +95,7 @@ const Offer = () => {
 
         {/* 3. The Plan */}
         <motion.section {...fade(0.15)}>
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#1A4D2E] mb-3 block">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
             Timeline
           </span>
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-8">
@@ -105,7 +105,7 @@ const Offer = () => {
             {timeline.map((t) => (
               <div key={t.phase} className="grid grid-cols-1 md:grid-cols-[140px_1fr] gap-6 py-8 border-b border-border">
                 <div>
-                  <span className="font-mono text-xs text-[#1A4D2E] tracking-wider block mb-1">{t.phase}</span>
+                  <span className="font-mono text-xs text-[hsl(var(--sage))] tracking-wider block mb-1">{t.phase}</span>
                   <span className="text-[11px] font-medium px-2.5 py-1 rounded-full border border-border text-muted-foreground">{t.period}</span>
                 </div>
                 <div>
@@ -115,7 +115,7 @@ const Offer = () => {
                   <ul className="space-y-1.5">
                     {t.items.map((item) => (
                       <li key={item} className="text-sm text-muted-foreground flex items-center gap-2">
-                        <span className="w-1 h-1 rounded-full bg-[#1A4D2E] shrink-0" />
+                        <span className="w-1 h-1 rounded-full bg-[hsl(var(--sage))] shrink-0" />
                         {item}
                       </li>
                     ))}
@@ -128,7 +128,7 @@ const Offer = () => {
 
         {/* 4. What You Get */}
         <motion.section {...fade(0.2)}>
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#1A4D2E] mb-3 block">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
             Deliverables
           </span>
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-8">
@@ -146,13 +146,13 @@ const Offer = () => {
 
         {/* 5. Investment */}
         <motion.section {...fade(0.25)}>
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#1A4D2E] mb-3 block">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
             Pricing
           </span>
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-8">
             Investment
           </h2>
-          <div className="border-t-2 border-t-[#1A4D2E] border-b border-border">
+          <div className="border-t-2 border-t-[hsl(var(--sage))] border-b border-border">
             {pricing.map((p) => (
               <div key={p.service} className="flex items-center justify-between py-5 border-b border-border last:border-b-0">
                 <span className="text-sm font-medium text-foreground">{p.service}</span>
@@ -176,7 +176,7 @@ const Offer = () => {
           </p>
           <a
             href="mailto:hello@thegrowthdesk.com"
-            className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-full bg-[#1A4D2E] text-white hover:bg-[#163f26] transition-colors"
+            className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-full bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-opacity"
           >
             Let's Get Started
           </a>

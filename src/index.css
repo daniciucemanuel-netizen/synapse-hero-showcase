@@ -36,6 +36,9 @@
 
     --radius: 0.75rem;
 
+    --sage: 152 48% 21%;
+    --surface: 40 20% 97%;
+
     --sidebar-background: 220 10% 97%;
     --sidebar-foreground: 220 20% 10%;
     --sidebar-primary: 230 80% 55%;
@@ -74,6 +77,9 @@
     --sidebar-accent-foreground: 0 0% 90%;
     --sidebar-border: 220 15% 18%;
     --sidebar-ring: 230 80% 60%;
+
+    --sage: 152 40% 55%;
+    --surface: 220 15% 7%;
   }
 }
 

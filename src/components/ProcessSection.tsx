@@ -33,7 +33,7 @@ const steps = [
 
 const ProcessSection = () => {
   return (
-    <section className="py-28 bg-[#FAFAF7]">
+    <section className="py-28 bg-[hsl(var(--surface))]">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
           {/* Left sticky column */}
@@ -45,7 +45,7 @@ const ProcessSection = () => {
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 0.6 }}
               >
-                <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#1A4D2E] mb-3 block">
+                <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
                   The Process
                 </span>
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-5 leading-[1.1]">
@@ -71,7 +71,7 @@ const ProcessSection = () => {
               >
                 <div className="flex items-start justify-between gap-4 mb-3">
                   <div className="flex items-baseline gap-4">
-                    <span className="font-mono text-xs text-[#1A4D2E] tracking-wider">
+                    <span className="font-mono text-xs text-[hsl(var(--sage))] tracking-wider">
                       {step.num}
                     </span>
                     <h3

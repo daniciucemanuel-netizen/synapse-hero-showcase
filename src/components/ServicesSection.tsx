@@ -29,7 +29,7 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-28 bg-white">
+    <section id="services" className="py-28 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -38,7 +38,7 @@ const ServicesSection = () => {
           transition={{ duration: 0.6 }}
           className="mb-14"
         >
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#1A4D2E] mb-3 block">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
             What We Do
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
@@ -54,8 +54,8 @@ const ServicesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className={`border-t-2 border-t-[#1A4D2E] p-6 pt-8 transition-colors duration-200 hover:bg-[#F3F2ED] ${
-                i < services.length - 1 ? "lg:border-r border-border" : ""
+              className={`border-t-2 border-t-[hsl(var(--sage))] p-6 pt-8 border border-border transition-colors duration-200 hover:bg-muted/50 ${
+                i < services.length - 1 ? "lg:border-r border-r-border" : ""
               }`}
             >
               <span className="font-mono text-xs text-muted-foreground tracking-wider">
