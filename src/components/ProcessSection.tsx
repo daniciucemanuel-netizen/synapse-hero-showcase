@@ -71,7 +71,7 @@ const ProcessSection = () => {
               >
                 <div className="flex items-start justify-between gap-4 mb-3">
                   <div className="flex items-baseline gap-4">
-                    <span className="font-mono text-xs text-[#1A4D2E] tracking-wider">
+                    <span className="font-mono text-xs text-[hsl(var(--sage))] tracking-wider">
                       {step.num}
                     </span>
                     <h3

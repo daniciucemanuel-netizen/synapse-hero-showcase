@@ -176,7 +176,7 @@ const Offer = () => {
           </p>
           <a
             href="mailto:hello@thegrowthdesk.com"
-            className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-full bg-[#1A4D2E] text-white hover:bg-[#163f26] transition-colors"
+            className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-full bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-opacity"
           >
             Let's Get Started
           </a>
