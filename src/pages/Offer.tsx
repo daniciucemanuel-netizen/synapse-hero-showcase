@@ -95,7 +95,7 @@ const Offer = () => {
 
         {/* 3. The Plan */}
         <motion.section {...fade(0.15)}>
-          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[#1A4D2E] mb-3 block">
+          <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
             Timeline
           </span>
           <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-8">
