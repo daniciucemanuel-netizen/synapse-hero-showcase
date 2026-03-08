@@ -3,47 +3,50 @@ import { motion } from "framer-motion";
 const services = [
   {
     num: "01",
-    title: "Brand & Web Development",
-    description: "From visual identity to production-ready websites. We design and ship, fast.",
-    tags: ["Visual Identity", "Product/UI Design", "Websites", "Landing Pages", "Pitch Decks"],
+    title: "Brand & Web",
+    description: "Identity systems and production-ready websites that convert visitors into pipeline.",
+    tags: ["Visual Identity", "Product Design", "Websites", "Landing Pages"],
   },
   {
     num: "02",
-    title: "Content & Distribution",
-    description: "SEO-optimized content, multi-channel distribution, and a publishing engine that compounds.",
-    tags: ["Content Calendars", "Blog & Long-Form", "SEO/AEO Strategy", "Newsletter", "Medium/LinkedIn/Substack"],
+    title: "Content & SEO",
+    description: "Search-optimized content and a publishing engine that compounds organic growth month over month.",
+    tags: ["Content Strategy", "Blog & Long-Form", "SEO/AEO", "Newsletter"],
   },
   {
     num: "03",
     title: "Social & Community",
-    description: "Platform-native strategies for X, Instagram, and emerging channels. Community-first growth.",
-    tags: ["X Management", "Community Building", "Reply Strategy", "Spaces & Events", "Custom Graphics"],
+    description: "Platform-native strategies that build audience, trust, and inbound demand across every channel.",
+    tags: ["X Management", "Community", "Spaces & Events", "Custom Graphics"],
   },
   {
     num: "04",
     title: "Growth & Partnerships",
-    description: "KOL campaigns, influencer coordination, press, and go-to-market strategy.",
-    tags: ["KOL Campaigns", "Partnership Management", "PR & Media", "Launch Strategy", "Campaign Analytics"],
+    description: "KOL campaigns, press, and go-to-market execution that put your brand in front of the right people.",
+    tags: ["KOL Campaigns", "Partnerships", "PR & Media", "Launch Strategy"],
   },
 ];
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-28 bg-background">
+    <section id="services" className="py-32 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mb-14"
+          className="mb-16"
         >
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
-            What We Do
+            Capabilities
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
-            Four services. One team. No gaps.
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-4">
+            End-to-end growth. No gaps.
           </h2>
+          <p className="text-muted-foreground text-base max-w-lg">
+            From brand to pipeline, we own the full funnel.
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
@@ -54,9 +57,7 @@ const ServicesSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className={`border-t-2 border-t-[hsl(var(--sage))] p-6 pt-8 border border-border transition-colors duration-200 hover:bg-muted/50 ${
-                i < services.length - 1 ? "lg:border-r border-r-border" : ""
-              }`}
+              className="border-t-2 border-t-[hsl(var(--sage))] p-6 pt-8 border border-border transition-colors duration-200 hover:bg-muted/50"
             >
               <span className="font-mono text-xs text-muted-foreground tracking-wider">
                 {service.num}
