@@ -27,7 +27,7 @@ const ContactSection = () => {
             <div className="flex flex-col sm:flex-row items-start gap-4">
               <a
                 href="mailto:hello@thegrowthdesk.com"
-                className="group inline-flex items-center gap-3 px-7 py-4 rounded-lg text-sm font-medium bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-all"
+                className="group inline-flex items-center gap-3 px-8 py-4 rounded-full text-sm font-medium bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-all"
               >
                 <Mail size={16} />
                 hello@thegrowthdesk.com
