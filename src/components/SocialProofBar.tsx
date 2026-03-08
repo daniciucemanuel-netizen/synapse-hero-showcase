@@ -4,7 +4,7 @@ const clientNames = ["LoadBetter", "Vino si Vezi", "Sovereign Motors", "Maison C
 
 const SocialProofBar = () => {
   return (
-    <section className="py-16 border-y border-border bg-background">
+    <section className="py-20 border-y border-border bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0 }}

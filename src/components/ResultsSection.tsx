@@ -11,14 +11,14 @@ const metrics = [
 
 const ResultsSection = () => {
   return (
-    <section id="results" className="py-32 bg-[hsl(var(--surface))]">
+    <section id="results" className="py-36 bg-[hsl(var(--surface))]">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-20"
         >
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
             Impact

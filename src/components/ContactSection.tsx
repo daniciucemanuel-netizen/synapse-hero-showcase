@@ -16,11 +16,11 @@ const ContactSection = () => {
               Get Started
             </span>
             <h2
-              className="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-background mb-5 leading-[1.1]"
+              className="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-background mb-8 leading-[1.1]"
             >
               Ready to accelerate?
             </h2>
-            <p className="text-background/60 text-base leading-relaxed mb-12 max-w-lg">
+            <p className="text-background/60 text-base leading-relaxed mb-14 max-w-lg">
               Tell us what you're building. We'll respond within 24 hours with a clear next step.
             </p>
 

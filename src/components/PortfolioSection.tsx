@@ -7,14 +7,14 @@ const featured = clients.filter((c) => c.featured);
 
 const PortfolioSection = () => {
   return (
-    <section id="work" className="py-32 bg-background">
+    <section id="work" className="py-36 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6 }}
-          className="mb-16"
+          className="mb-20"
         >
           <span className="text-xs font-mono uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
             Selected Work
@@ -77,7 +77,7 @@ const PortfolioSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4, duration: 0.5 }}
-          className="mt-12 text-center"
+          className="mt-16 text-center"
         >
           <Link
             to="/work"
