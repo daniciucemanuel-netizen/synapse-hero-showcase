@@ -59,7 +59,7 @@ const ServicesSection = () => {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
               whileHover={{ y: -4 }}
-              className="bg-background border-t-2 border-t-[hsl(var(--sage))] p-8 pt-10 min-h-[280px] transition-colors duration-200 hover:bg-muted/30 cursor-default"
+              className="bg-background border-t-2 border-t-[hsl(var(--sage))] p-8 pt-10 min-h-[280px] transition-colors duration-200 hover:bg-muted/30 cursor-default flex flex-col"
             >
               <span className="font-mono text-xs text-muted-foreground tracking-wider">
                 {service.num}
@@ -67,10 +67,10 @@ const ServicesSection = () => {
               <h3 className="text-lg font-semibold text-foreground mt-4 mb-3 tracking-tight leading-snug">
                 {service.title}
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
+              <p className="text-muted-foreground text-sm leading-relaxed mb-6 flex-1">
                 {service.description}
               </p>
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-wrap gap-1.5 mt-auto">
                 {service.tags.map((tag) => (
                   <span
                     key={tag}
