@@ -1,13 +1,44 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
 
 const metrics = [
-  { value: "3.5x", label: "Organic traffic growth, 6 months" },
-  { value: "47%", label: "Increase in qualified inbound leads" },
-  { value: "2.1x", label: "Return on ad spend" },
-  { value: "30+", label: "Projects shipped" },
-  { value: "18", label: "Days from brief to launch" },
-  { value: "96%", label: "Client retention rate" },
+  { value: "3.5", suffix: "x", label: "Organic traffic growth, 6 months" },
+  { value: "47", suffix: "%", label: "Increase in qualified inbound leads" },
+  { value: "2.1", suffix: "x", label: "Return on ad spend" },
+  { value: "30", suffix: "+", label: "Projects shipped" },
+  { value: "18", suffix: "", label: "Days from brief to launch" },
+  { value: "96", suffix: "%", label: "Client retention rate" },
 ];
+
+function AnimatedNumber({ value, suffix }: { value: string; suffix: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const [display, setDisplay] = useState("0");
+
+  useEffect(() => {
+    if (!isInView) return;
+    const target = parseFloat(value);
+    const isDecimal = value.includes(".");
+    const duration = 1200;
+    const start = performance.now();
+
+    const tick = (now: number) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = target * eased;
+      setDisplay(isDecimal ? current.toFixed(1) : Math.round(current).toString());
+      if (progress < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  }, [isInView, value]);
+
+  return (
+    <span ref={ref}>
+      {display}{suffix}
+    </span>
+  );
+}
 
 const ResultsSection = () => {
   return (
@@ -38,8 +69,9 @@ const ResultsSection = () => {
               transition={{ delay: i * 0.08, duration: 0.5 }}
               className="bg-background p-10 md:p-14"
             >
+              <div className="w-8 h-px bg-[hsl(var(--sage))] opacity-30 mb-6" />
               <span className="font-mono text-5xl sm:text-6xl md:text-7xl font-bold tracking-tight text-[hsl(var(--sage))] block mb-4">
-                {metric.value}
+                <AnimatedNumber value={metric.value} suffix={metric.suffix} />
               </span>
               <p className="text-sm text-muted-foreground leading-relaxed">
                 {metric.label}

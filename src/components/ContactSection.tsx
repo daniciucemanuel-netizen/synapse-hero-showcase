@@ -12,8 +12,8 @@ const ContactSection = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
-              Get Started
+            <span className="font-mono text-xs uppercase tracking-[0.2em] text-emerald-400 dark:text-emerald-700 mb-3 block">
+              Let's Talk
             </span>
             <h2
               className="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-background mb-8 leading-[1.1]"
@@ -27,10 +27,10 @@ const ContactSection = () => {
             <div className="flex flex-col sm:flex-row items-start gap-4">
               <a
                 href="mailto:hello@thegrowthdesk.com"
-                className="group inline-flex items-center gap-3 px-8 py-4 rounded-full text-sm font-medium bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-all"
+                className="group inline-flex items-center gap-3 px-8 py-4 rounded-full text-sm font-medium bg-emerald-400 dark:bg-emerald-700 text-foreground dark:text-background hover:opacity-90 transition-all"
               >
                 <Mail size={16} />
-                hello@thegrowthdesk.com
+                Start a Conversation
                 <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
               </a>
             </div>
