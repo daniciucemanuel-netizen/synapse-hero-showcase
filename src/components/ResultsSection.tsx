@@ -2,12 +2,12 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
 
 const metrics = [
-  { value: "3.5", suffix: "x", label: "Organic traffic growth, 6 months" },
-  { value: "47", suffix: "%", label: "Increase in qualified inbound leads" },
-  { value: "2.1", suffix: "x", label: "Return on ad spend" },
-  { value: "30", suffix: "+", label: "Projects shipped" },
-  { value: "18", suffix: "", label: "Days from brief to launch" },
-  { value: "96", suffix: "%", label: "Client retention rate" },
+  { value: "2.4", suffix: "x", label: "Organic traffic growth, 6 months" },
+  { value: "32", suffix: "%", label: "Increase in qualified inbound leads" },
+  { value: "1.8", suffix: "x", label: "Return on ad spend" },
+  { value: "10", suffix: "+", label: "Projects shipped" },
+  { value: "20", suffix: "", label: "Days from brief to launch" },
+  { value: "91", suffix: "%", label: "Client retention rate" },
 ];
 
 function AnimatedNumber({ value, suffix }: { value: string; suffix: string }) {
