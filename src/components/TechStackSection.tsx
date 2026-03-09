@@ -32,7 +32,7 @@ const TechStackSection = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center text-xs uppercase tracking-[0.2em] text-muted-foreground mb-12"
+          className="text-center text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6"
         >
           Technologies We Use
         </motion.p>
