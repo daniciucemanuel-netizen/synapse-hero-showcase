@@ -16,7 +16,7 @@ const ContactSection = () => {
               Let's Talk
             </span>
             <h2
-              className="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-background mb-8 leading-[1.1]"
+              className="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-background mb-8 leading-[1.1] whitespace-nowrap"
             >
               Get your free growth audit.
             </h2>
