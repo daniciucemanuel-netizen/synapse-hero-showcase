@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { Search, Map, Zap, TrendingUp } from "lucide-react";
 
 const steps = [
   {
     num: "01",
+    icon: Search,
     title: "Audit & Discovery",
     time: "Week 1",
     description:
@@ -10,6 +12,7 @@ const steps = [
   },
   {
     num: "02",
+    icon: Map,
     title: "Strategy & Roadmap",
     time: "Week 2",
     description:
@@ -17,6 +20,7 @@ const steps = [
   },
   {
     num: "03",
+    icon: Zap,
     title: "Execute & Ship",
     time: "Weeks 3–8",
     description:
@@ -24,6 +28,7 @@ const steps = [
   },
   {
     num: "04",
+    icon: TrendingUp,
     title: "Optimize & Scale",
     time: "Ongoing",
     description:
@@ -55,33 +60,37 @@ const ProcessSection = () => {
           </div>
 
           <div className="lg:col-span-3">
-            {steps.map((step, i) => (
-              <motion.div
-                key={step.num}
-                initial={{ opacity: 0, y: 24 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ delay: i * 0.1, duration: 0.5 }}
-                className={`py-12 ${i < steps.length - 1 ? "border-b border-border" : ""}`}
-              >
-                <div className="flex items-start justify-between gap-4 mb-3">
-                  <div className="flex items-baseline gap-4">
-                    <span className="font-mono text-sm text-[hsl(var(--sage))] tracking-wider">
-                      {step.num}
+            {steps.map((step, i) => {
+              const Icon = step.icon;
+              return (
+                <motion.div
+                  key={step.num}
+                  initial={{ opacity: 0, y: 24 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-50px" }}
+                  transition={{ delay: i * 0.1, duration: 0.5 }}
+                  className={`py-12 ${i < steps.length - 1 ? "border-b border-border" : ""}`}
+                >
+                  <div className="flex items-start justify-between gap-4 mb-3">
+                    <div className="flex items-center gap-4">
+                      <Icon size={18} className="text-[hsl(var(--sage))] shrink-0" />
+                      <span className="font-mono text-sm text-[hsl(var(--sage))] tracking-wider">
+                        {step.num}
+                      </span>
+                      <h3 className="text-xl font-semibold text-foreground tracking-tight">
+                        {step.title}
+                      </h3>
+                    </div>
+                    <span className="text-[11px] font-medium px-3 py-1 rounded-full border border-border text-muted-foreground whitespace-nowrap">
+                      {step.time}
                     </span>
-                    <h3 className="text-xl font-semibold text-foreground tracking-tight">
-                      {step.title}
-                    </h3>
                   </div>
-                  <span className="text-[11px] font-medium px-3 py-1 rounded-full border border-border text-muted-foreground whitespace-nowrap">
-                    {step.time}
-                  </span>
-                </div>
-                <p className="text-muted-foreground text-sm leading-relaxed pl-10 mt-1">
-                  {step.description}
-                </p>
-              </motion.div>
-            ))}
+                  <p className="text-muted-foreground text-sm leading-relaxed pl-[42px] mt-1">
+                    {step.description}
+                  </p>
+                </motion.div>
+              );
+            })}
           </div>
         </div>
       </div>
