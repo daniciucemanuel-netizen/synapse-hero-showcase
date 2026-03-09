@@ -25,18 +25,18 @@ const categories = [
 
 const TechStackSection = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-12 bg-background">
       <div className="max-w-7xl mx-auto px-6">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center text-xs uppercase tracking-[0.2em] text-muted-foreground mb-12"
+          className="text-center text-xs uppercase tracking-[0.2em] text-muted-foreground mb-6"
         >
           Technologies We Use
         </motion.p>
-        <div className="max-w-4xl mx-auto space-y-6">
+        <div className="max-w-4xl mx-auto space-y-3">
           {categories.map((cat, ci) => (
             <motion.div
               key={cat.name}
