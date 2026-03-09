@@ -11,7 +11,7 @@ const Footer = () => {
                 The Growth Desk
               </span>
               <p className="text-sm text-muted-foreground">
-                Strategy, content, and distribution for companies that need traction.
+                AI-powered growth marketing agency — brand strategy, content, SEO, and distribution.
               </p>
             </div>
             <nav className="flex items-center gap-6" aria-label="Footer navigation">
