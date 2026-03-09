@@ -57,7 +57,7 @@ const Navbar = () => {
             href="#contact"
             className="hidden md:inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-all"
           >
-            Book a Call
+            Free Growth Audit
           </a>
         </div>
       </div>
