@@ -18,10 +18,10 @@ const ContactSection = () => {
             <h2
               className="text-3xl md:text-4xl lg:text-6xl font-bold tracking-tight text-background mb-8 leading-[1.1]"
             >
-              Ready to accelerate?
+              Get your free growth audit.
             </h2>
             <p className="text-background/60 text-base leading-relaxed mb-14 max-w-lg">
-              Tell us what you're building. We'll respond within 24 hours with a clear next step.
+              Tell us what you're building. We'll respond within 24 hours with a custom growth roadmap — no commitment, no pitch deck required.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start gap-4">
@@ -30,13 +30,25 @@ const ContactSection = () => {
                 className="group inline-flex items-center gap-3 px-8 py-4 rounded-full text-sm font-medium bg-emerald-400 dark:bg-emerald-700 text-foreground dark:text-background hover:opacity-90 transition-all"
               >
                 <Mail size={16} />
-                Start a Conversation
+                Get Your Custom Strategy
                 <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
               </a>
             </div>
-            <p className="text-background/30 text-xs mt-6 tracking-wide">
-              No commitment. No pitch deck required.
-            </p>
+
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-8 text-background/40 text-xs tracking-wide">
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400/60" />
+                Free consultation
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400/60" />
+                24h response time
+              </span>
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400/60" />
+                No commitment
+              </span>
+            </div>
           </motion.div>
         </div>
       </div>

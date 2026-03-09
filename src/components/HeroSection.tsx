@@ -52,7 +52,7 @@ const HeroSection = () => {
             href="#contact"
             className="group px-10 py-4 rounded-full text-sm font-medium bg-foreground text-background hover:bg-foreground/90 transition-all inline-flex items-center gap-2"
           >
-            Get Started
+            Get Your Free Growth Audit
             <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
           </a>
           <a
@@ -62,6 +62,16 @@ const HeroSection = () => {
             See Our Work
           </a>
         </motion.div>
+
+        <motion.p
+          custom={4}
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          className="text-muted-foreground/50 text-xs mt-6 tracking-wide"
+        >
+          Free consultation · No commitment · Response within 24h
+        </motion.p>
       </div>
     </section>
   );
