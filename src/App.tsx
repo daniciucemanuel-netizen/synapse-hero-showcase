@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Offer from "./pages/Offer";
 import Work from "./pages/Work";
+import Blog from "./pages/Blog";
 
 const queryClient = new QueryClient();
 
