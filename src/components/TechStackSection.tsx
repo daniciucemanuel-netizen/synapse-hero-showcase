@@ -4,27 +4,22 @@ const categories = [
   {
     name: "AI",
     dotColor: "bg-emerald-500",
-    tools: ["Claude", "ChatGPT", "Gemini", "Grok", "OpenAI", "LangChain", "Antigravity"],
+    tools: ["Claude", "ChatGPT", "Gemini", "Grok"],
   },
   {
     name: "Development",
     dotColor: "bg-blue-500",
-    tools: ["React", "Next.js", "Node.js", "Tailwind CSS", "PostgreSQL", "Supabase", "Firebase"],
+    tools: ["Lovable", "React", "Tailwind CSS", "Supabase"],
   },
   {
     name: "Design",
     dotColor: "bg-purple-500",
-    tools: ["Figma", "Framer", "Webflow", "Canva"],
+    tools: ["Figma", "Framer", "Canva"],
   },
   {
     name: "Distribution",
     dotColor: "bg-amber-500",
-    tools: ["X/Twitter", "CoinMarketCap", "Medium", "Substack", "LinkedIn", "Reddit"],
-  },
-  {
-    name: "Platforms",
-    dotColor: "bg-gray-400",
-    tools: ["Vercel", "Lovable", "Stripe", "Notion"],
+    tools: ["X/Twitter", "LinkedIn", "Medium", "Substack"],
   },
 ];
 
