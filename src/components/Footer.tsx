@@ -14,11 +14,12 @@ const Footer = () => {
                 Strategy, content, and distribution for companies that need traction.
               </p>
             </div>
-            <div className="flex items-center gap-6">
+            <nav className="flex items-center gap-6" aria-label="Footer navigation">
               <a href="#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
-              <a href="#work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Work</a>
+              <a href="/offer" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Our Offer</a>
+              <a href="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Case Studies</a>
               <a href="#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
-            </div>
+            </nav>
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-8 border-t border-border">
