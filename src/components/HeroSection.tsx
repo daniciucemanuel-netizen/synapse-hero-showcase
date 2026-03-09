@@ -38,7 +38,7 @@ const HeroSection = () => {
           animate="visible"
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-16 leading-relaxed tracking-[-0.02em]"
         >
-          Strategy, content, and distribution for companies that need traction.
+          Full-funnel growth marketing — brand strategy, content marketing, SEO, and distribution for companies that need traction.
         </motion.p>
 
         <motion.div

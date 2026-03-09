@@ -46,11 +46,12 @@ const ServicesSection = () => {
           <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
             Capabilities
           </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-4">
-            End-to-end growth. No gaps.
+           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-foreground mb-4">
+            End-to-end growth marketing. No gaps.
           </h2>
           <p className="text-muted-foreground text-base max-w-lg">
-            From brand to pipeline, we own the full funnel.
+            From brand strategy to content marketing and SEO — we own the full funnel.{" "}
+            <a href="/offer" className="text-[hsl(var(--sage))] hover:underline">See our full offer →</a>
           </p>
         </motion.div>
 
