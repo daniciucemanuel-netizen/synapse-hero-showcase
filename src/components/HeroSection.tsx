@@ -50,14 +50,14 @@ const HeroSection = () => {
         >
           <a
             href="#contact"
-            className="group w-[280px] sm:w-auto px-10 py-4 rounded-full text-sm font-medium bg-foreground text-background hover:bg-foreground/90 transition-all inline-flex items-center justify-center gap-2"
+            className="group w-[280px] sm:w-[240px] py-4 rounded-full text-sm font-medium bg-foreground text-background hover:bg-foreground/90 transition-all inline-flex items-center justify-center gap-2"
           >
             Get Your Free Growth Audit
             <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
           </a>
           <a
             href="#work"
-            className="w-[280px] sm:w-auto px-10 py-4 rounded-full text-sm font-medium border border-foreground/20 text-foreground hover:border-foreground/50 transition-all text-center"
+            className="w-[280px] sm:w-[240px] py-4 rounded-full text-sm font-medium border border-foreground/20 text-foreground hover:border-foreground/50 transition-all text-center inline-flex items-center justify-center"
           >
             See Our Work
           </a>
