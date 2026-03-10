@@ -40,9 +40,9 @@ const Navbar = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 h-[72px] flex items-center justify-between">
-          <a href="/" className="text-foreground font-semibold tracking-tight text-lg font-[Space_Grotesk]">
-            The Growth Desk
-          </a>
+          <Link to="/">
+            <img src={logo} alt="The Growth Desk" className="h-8" />
+          </Link>
 
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (

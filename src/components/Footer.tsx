@@ -8,9 +8,7 @@ const Footer = () => {
         <div className="flex flex-col gap-16">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <span className="text-foreground font-semibold tracking-tight text-lg font-[Space_Grotesk] block mb-1">
-                The Growth Desk
-              </span>
+              <img src={logo} alt="The Growth Desk" className="h-8 mb-1" />
               <p className="text-sm text-muted-foreground">
                 AI-powered growth marketing agency — brand strategy, content, SEO, and distribution.
               </p>
