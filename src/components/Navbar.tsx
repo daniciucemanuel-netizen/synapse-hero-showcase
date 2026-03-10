@@ -2,6 +2,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Sun, Moon, Menu, X } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import logo from "@/assets/Growth_Desk_Logo.png";
 
 const navLinks = [
   { label: "Services", href: "#services" },
