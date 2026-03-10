@@ -15,7 +15,7 @@
     --popover: 40 20% 99%;
     --popover-foreground: 220 25% 8%;
 
-    --primary: 152 45% 18%;
+    --primary: 152 40% 54%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 10% 94%;
@@ -24,7 +24,7 @@
     --muted: 220 10% 94%;
     --muted-foreground: 220 10% 50%;
 
-    --accent: 152 45% 18%;
+    --accent: 152 40% 54%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,21 +32,21 @@
 
     --border: 220 10% 90%;
     --input: 220 10% 90%;
-    --ring: 152 45% 18%;
+    --ring: 152 40% 54%;
 
     --radius: 0.75rem;
 
-    --sage: 152 45% 28%;
+    --sage: 152 40% 54%;
     --surface: 40 15% 96%;
 
     --sidebar-background: 220 10% 97%;
     --sidebar-foreground: 220 25% 8%;
-    --sidebar-primary: 152 45% 18%;
+    --sidebar-primary: 152 40% 54%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 220 10% 94%;
     --sidebar-accent-foreground: 220 25% 8%;
     --sidebar-border: 220 10% 90%;
-    --sidebar-ring: 152 45% 18%;
+    --sidebar-ring: 152 40% 54%;
   }
 
   .dark {
@@ -56,29 +56,29 @@
     --card-foreground: 40 10% 95%;
     --popover: 220 15% 7%;
     --popover-foreground: 40 10% 95%;
-    --primary: 152 40% 50%;
+    --primary: 152 40% 54%;
     --primary-foreground: 0 0% 3%;
     --secondary: 220 15% 12%;
     --secondary-foreground: 40 10% 95%;
     --muted: 220 12% 14%;
     --muted-foreground: 220 10% 50%;
-    --accent: 152 40% 50%;
+    --accent: 152 40% 54%;
     --accent-foreground: 0 0% 3%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
     --border: 220 12% 16%;
     --input: 220 12% 16%;
-    --ring: 152 40% 50%;
+    --ring: 152 40% 54%;
     --sidebar-background: 0 0% 4%;
     --sidebar-foreground: 40 10% 90%;
-    --sidebar-primary: 152 40% 50%;
+    --sidebar-primary: 152 40% 54%;
     --sidebar-primary-foreground: 0 0% 3%;
     --sidebar-accent: 220 15% 12%;
     --sidebar-accent-foreground: 40 10% 90%;
     --sidebar-border: 220 12% 16%;
-    --sidebar-ring: 152 40% 50%;
+    --sidebar-ring: 152 40% 54%;
 
-    --sage: 152 40% 55%;
+    --sage: 152 40% 54%;
     --surface: 220 12% 6%;
   }
 }
