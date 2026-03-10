@@ -1,4 +1,5 @@
 import { Linkedin, Twitter, Instagram } from "lucide-react";
+import logo from "@/assets/Growth_Desk_Logo.png";
 
 const Footer = () => {
   return (
