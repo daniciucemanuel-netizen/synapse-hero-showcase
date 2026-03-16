@@ -3,7 +3,8 @@ import { Sun, Moon, Menu, X } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/Growth_Desk_Logo.png";
+import logoBlack from "@/assets/Norel_Studio_Black.png";
+import logoWhite from "@/assets/Norel_Studio_White.png";
 
 const navLinks = [
   { label: "Services", href: "#services" },
@@ -23,11 +24,12 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Lock body scroll when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
+
+  const logo = theme === "dark" ? logoWhite : logoBlack;
 
   return (
     <>
@@ -41,7 +43,7 @@ const Navbar = () => {
       >
         <div className="max-w-7xl mx-auto px-6 h-[72px] flex items-center justify-between">
           <Link to="/">
-            <img src={logo} alt="The Growth Desk" className="h-8" />
+            <img src={logo} alt="Norel Studio" className="h-8" />
           </Link>
 
           <div className="hidden md:flex items-center gap-8">
@@ -81,7 +83,6 @@ const Navbar = () => {
         </div>
       </motion.nav>
 
-      {/* Mobile menu overlay */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div

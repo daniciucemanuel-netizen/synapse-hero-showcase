@@ -50,7 +50,7 @@ const Offer = () => {
       {/* Header */}
       <header className="max-w-4xl mx-auto px-6 py-8 flex items-center justify-between border-b border-border">
         <span className="font-semibold text-foreground tracking-tight text-lg" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-          The Growth Desk
+          Norel Studio
         </span>
         <div className="flex items-center gap-6 text-xs text-muted-foreground font-mono tracking-wide">
           <span>Prepared for {COMPANY}</span>
@@ -175,7 +175,7 @@ const Offer = () => {
             Let's lock in the plan and start building your growth engine.
           </p>
           <a
-            href="mailto:hello@thegrowthdesk.com"
+            href="mailto:hello@norelstudio.com"
             className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-full bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-opacity"
           >
             Let's Get Started
@@ -186,7 +186,7 @@ const Offer = () => {
       {/* Footer */}
       <footer className="max-w-4xl mx-auto px-6 py-8 border-t border-border text-center">
         <p className="text-xs text-muted-foreground">
-          Confidential — Prepared exclusively for {COMPANY} by The Growth Desk.
+          Confidential — Prepared exclusively for {COMPANY} by Norel Studio.
         </p>
       </footer>
     </div>
