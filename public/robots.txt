@@ -1,5 +1,19 @@
+# Indexing
 User-agent: *
 Allow: /
 Disallow: /offer
 
+# Block common non-public paths
+Disallow: /api/
+Disallow: /admin/
+Disallow: /staging/
+
+# Crawl-delay (be polite)
+User-agent: *
+Crawl-delay: 1
+
+# Sitemap
 Sitemap: https://norelstudio.com/sitemap.xml
+
+# Host
+Host: https://norelstudio.com

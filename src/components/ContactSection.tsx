@@ -12,7 +12,7 @@ const ContactSection = () => {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
           >
-            <span className="font-mono text-xs uppercase tracking-[0.2em] text-emerald-400 dark:text-emerald-700 mb-3 block">
+            <span className="font-mono text-xs uppercase tracking-[0.2em] text-[hsl(var(--sage))] mb-3 block">
               Let's Talk
             </span>
             <h2
@@ -27,7 +27,8 @@ const ContactSection = () => {
             <div className="flex flex-col sm:flex-row items-start gap-4">
               <a
                 href="mailto:hello@norelstudio.com"
-                className="group inline-flex items-center gap-3 px-8 py-4 rounded-full text-sm font-medium bg-emerald-400 dark:bg-emerald-700 text-foreground dark:text-background hover:opacity-90 transition-all"
+                className="group inline-flex items-center gap-3 px-8 py-4 rounded-full text-sm font-medium bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-all"
+                aria-label="Email Norel Studio for a free growth strategy consultation"
               >
                 <Mail size={16} />
                 Get Your Custom Strategy
@@ -37,17 +38,25 @@ const ContactSection = () => {
 
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 mt-8 text-background/40 text-xs tracking-wide">
               <span className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400/60" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--sage))]/60" />
                 Free consultation
               </span>
               <span className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400/60" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--sage))]/60" />
                 24h response time
               </span>
               <span className="flex items-center gap-1.5">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-400/60" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--sage))]/60" />
                 No commitment
               </span>
+            </div>
+
+            <div className="mt-8">
+              <address className="not-italic text-background/30 text-xs">
+                <a href="mailto:hello@norelstudio.com" className="hover:text-background/60 transition-colors">hello@norelstudio.com</a>
+                <span className="mx-2">·</span>
+                Europe-based, worldwide service
+              </address>
             </div>
           </motion.div>
         </div>
