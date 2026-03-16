@@ -43,7 +43,7 @@ const Navbar = () => {
       >
         <div className="max-w-7xl mx-auto px-6 h-[72px] flex items-center justify-between">
           <Link to="/">
-            <img src={logo} alt="Norel Studio" className="h-8" />
+            <img src={logo} alt="Norel Studio" className="h-8" fetchPriority="high" />
           </Link>
 
           <div className="hidden md:flex items-center gap-8">

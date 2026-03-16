@@ -1,3 +1,4 @@
+import SEO from "@/components/SEO";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import SocialProofBar from "@/components/SocialProofBar";
@@ -13,6 +14,11 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Norel Studio — AI-Powered Growth Marketing Agency | Brand, Content & SEO"
+        description="AI-powered growth agency specializing in strategy, content, and distribution. 2.4x organic growth, 32% lead increase. Schedule your free audit today."
+        canonical="https://norelstudio.com/"
+      />
       <Navbar />
       <HeroSection />
       <SocialProofBar />

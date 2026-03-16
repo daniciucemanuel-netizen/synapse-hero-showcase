@@ -21,7 +21,7 @@ const ContactSection = () => {
               Get your free growth audit.
             </h2>
             <p className="text-background/60 text-base leading-relaxed mb-14 max-w-lg">
-              Tell us what you're building. We'll respond within 24 hours with a custom growth roadmap — no commitment, no pitch deck required.
+              Tell us what you're building. We'll respond within 24 hours with a custom growth roadmap — no commitment, no pitch deck required. We work with teams worldwide from our European base.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start gap-4">
