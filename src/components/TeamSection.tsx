@@ -33,7 +33,7 @@ const TeamSection = () => {
             className="flex items-end"
           >
             <p className="text-muted-foreground text-base leading-relaxed max-w-lg">
-              We started The Growth Desk because we saw too many agencies selling decks instead of shipping work. Our team has scaled brands from zero to millions in reach across Web3, SaaS, and consumer tech — combining AI-powered tooling with hands-on execution.
+              We started Norel Studio because we saw too many agencies selling decks instead of shipping work. Our team has scaled brands from zero to millions in reach across Web3, SaaS, and consumer tech — combining AI-powered tooling with hands-on execution. Our team has scaled brands from zero to millions in reach across Web3, SaaS, and consumer tech — combining AI-powered tooling with hands-on execution.
             </p>
           </motion.div>
         </div>

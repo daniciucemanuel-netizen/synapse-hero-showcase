@@ -186,7 +186,7 @@ const Offer = () => {
       {/* Footer */}
       <footer className="max-w-4xl mx-auto px-6 py-8 border-t border-border text-center">
         <p className="text-xs text-muted-foreground">
-          Confidential — Prepared exclusively for {COMPANY} by The Growth Desk.
+          Confidential — Prepared exclusively for {COMPANY} by Norel Studio.
         </p>
       </footer>
     </div>
