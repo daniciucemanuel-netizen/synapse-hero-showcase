@@ -175,7 +175,7 @@ const Offer = () => {
             Let's lock in the plan and start building your growth engine.
           </p>
           <a
-            href="mailto:hello@thegrowthdesk.com"
+            href="mailto:hello@norelstudio.com"
             className="inline-flex items-center justify-center px-8 py-3.5 text-sm font-semibold rounded-full bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-opacity"
           >
             Let's Get Started
