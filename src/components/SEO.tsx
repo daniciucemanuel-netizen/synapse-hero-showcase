@@ -4,35 +4,67 @@ interface SEOProps {
   title: string;
   description: string;
   canonical?: string;
+  noindex?: boolean;
+  ogImage?: string;
+  type?: string;
+  jsonLd?: object;
 }
 
-const SEO = ({ title, description, canonical }: SEOProps) => {
+const SEO = ({ title, description, canonical, noindex, ogImage, type = "website", jsonLd }: SEOProps) => {
   useEffect(() => {
     document.title = title;
 
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) metaDesc.setAttribute("content", description);
+    const setMeta = (selector: string, content: string, attr = "content") => {
+      const el = document.querySelector(selector);
+      if (el) el.setAttribute(attr, content);
+    };
 
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) ogTitle.setAttribute("content", title);
+    setMeta('meta[name="description"]', description);
+    setMeta('meta[property="og:title"]', title);
+    setMeta('meta[property="og:description"]', description);
+    setMeta('meta[property="og:type"]', type);
+    setMeta('meta[name="twitter:title"]', title);
+    setMeta('meta[name="twitter:description"]', description);
 
-    const ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) ogDesc.setAttribute("content", description);
-
-    const twTitle = document.querySelector('meta[name="twitter:title"]');
-    if (twTitle) twTitle.setAttribute("content", title);
-
-    const twDesc = document.querySelector('meta[name="twitter:description"]');
-    if (twDesc) twDesc.setAttribute("content", description);
+    if (ogImage) {
+      setMeta('meta[property="og:image"]', ogImage);
+      setMeta('meta[name="twitter:image"]', ogImage);
+    }
 
     if (canonical) {
-      const link = document.querySelector('link[rel="canonical"]');
-      if (link) link.setAttribute("href", canonical);
-
-      const ogUrl = document.querySelector('meta[property="og:url"]');
-      if (ogUrl) ogUrl.setAttribute("content", canonical);
+      setMeta('link[rel="canonical"]', canonical, "href");
+      setMeta('meta[property="og:url"]', canonical);
     }
-  }, [title, description, canonical]);
+
+    // Handle noindex
+    let robotsMeta = document.querySelector('meta[name="robots"]') as HTMLMetaElement;
+    if (noindex) {
+      if (!robotsMeta) {
+        robotsMeta = document.createElement("meta");
+        robotsMeta.name = "robots";
+        document.head.appendChild(robotsMeta);
+      }
+      robotsMeta.content = "noindex, nofollow";
+    } else if (robotsMeta) {
+      robotsMeta.content = "index, follow";
+    }
+
+    // Handle JSON-LD
+    const existingScript = document.querySelector('script[data-seo-jsonld]');
+    if (existingScript) existingScript.remove();
+    if (jsonLd) {
+      const script = document.createElement("script");
+      script.type = "application/ld+json";
+      script.setAttribute("data-seo-jsonld", "true");
+      script.textContent = JSON.stringify(jsonLd);
+      document.head.appendChild(script);
+    }
+
+    return () => {
+      const script = document.querySelector('script[data-seo-jsonld]');
+      if (script) script.remove();
+    };
+  }, [title, description, canonical, noindex, ogImage, type, jsonLd]);
 
   return null;
 };

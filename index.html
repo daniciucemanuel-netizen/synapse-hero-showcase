@@ -4,22 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0a0a0a" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://stream.mux.com" />
+
     <link rel="icon" href="/favicon.png" type="image/png" />
     <title>Norel Studio — AI-Powered Growth Marketing Agency | Brand, Content & SEO</title>
-    <meta name="description" content="AI-powered growth agency specializing in strategy, content, and distribution. 2.4x organic growth, 32% lead increase. Schedule your free audit today.">
+    <meta name="description" content="Norel Studio is an AI-powered growth marketing agency specializing in brand strategy, content marketing, SEO, and distribution. 2.4x organic growth, 32% lead increase. Based in Europe, serving clients worldwide. Schedule your free growth audit today.">
     <meta name="author" content="Norel Studio" />
+    <meta name="keywords" content="growth marketing agency, AI marketing agency, SEO agency, content marketing, brand strategy, digital marketing agency, performance marketing" />
     <link rel="canonical" href="https://norelstudio.com/" />
 
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://norelstudio.com/" />
-    <meta property="og:title" content="Norel Studio — AI-Powered Growth Marketing Agency">
-    <meta property="og:description" content="AI-powered growth agency specializing in strategy, content, and distribution. 2.4x organic growth, 32% lead increase. Schedule your free audit today.">
+    <meta property="og:title" content="Norel Studio — AI-Powered Growth Marketing Agency | Brand, Content & SEO">
+    <meta property="og:description" content="AI-powered growth marketing agency specializing in brand strategy, content, SEO, and distribution. 2.4x organic growth. Schedule your free audit today.">
     <meta property="og:image" content="https://norelstudio.com/og-image.png">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Norel Studio" />
+    <meta property="og:locale" content="en_US" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@NorelStudio" />
+    <meta name="twitter:creator" content="@NorelStudio" />
     <meta name="twitter:title" content="Norel Studio — AI-Powered Growth Marketing Agency">
-    <meta name="twitter:description" content="AI-powered growth agency specializing in strategy, content, and distribution. 2.4x organic growth, 32% lead increase. Schedule your free audit today.">
+    <meta name="twitter:description" content="AI-powered growth marketing agency specializing in brand strategy, content, SEO, and distribution. Schedule your free growth audit today.">
     <meta name="twitter:image" content="https://norelstudio.com/og-image.png">
 
     <script type="application/ld+json">
@@ -29,15 +43,17 @@
       "name": "Norel Studio",
       "url": "https://norelstudio.com/",
       "logo": "https://norelstudio.com/favicon.png",
-      "description": "AI-Powered growth agency providing strategy, content, and distribution for companies that need traction.",
+      "description": "AI-powered growth marketing agency providing brand strategy, content marketing, SEO, and distribution for companies that need traction.",
+      "foundingDate": "2025",
       "sameAs": [
         "https://twitter.com/norelstudio",
         "https://linkedin.com/company/norelstudio"
       ],
       "contactPoint": {
         "@type": "ContactPoint",
-        "contactType": "Customer Service",
-        "email": "hello@norelstudio.com"
+        "contactType": "Sales",
+        "email": "hello@norelstudio.com",
+        "availableLanguage": ["English", "Romanian"]
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -46,22 +62,26 @@
           {
             "@type": "Service",
             "name": "Brand & Web Design",
-            "description": "Logo systems, brand guidelines, and conversion-optimized websites."
+            "description": "Logo systems, brand guidelines, and conversion-optimized websites.",
+            "provider": { "@type": "Organization", "name": "Norel Studio" }
           },
           {
             "@type": "Service",
             "name": "Content Marketing & SEO",
-            "description": "Long-form content, AI-powered SEO audits, and AEO optimization."
+            "description": "Long-form content, AI-powered SEO audits, and AEO optimization.",
+            "provider": { "@type": "Organization", "name": "Norel Studio" }
           },
           {
             "@type": "Service",
             "name": "Social Media & Community Management",
-            "description": "Platform-native campaigns across X, LinkedIn, and Discord."
+            "description": "Platform-native campaigns across X, LinkedIn, and Discord.",
+            "provider": { "@type": "Organization", "name": "Norel Studio" }
           },
           {
             "@type": "Service",
             "name": "Growth & Partnerships",
-            "description": "Influencer outreach, co-marketing, and launch strategy."
+            "description": "Influencer outreach, co-marketing, and launch strategy.",
+            "provider": { "@type": "Organization", "name": "Norel Studio" }
           }
         ]
       }
@@ -71,17 +91,58 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
+      "@type": "ProfessionalService",
       "name": "Norel Studio",
       "url": "https://norelstudio.com/",
       "email": "hello@norelstudio.com",
-      "description": "AI-powered growth marketing agency — brand strategy, content, SEO, and distribution.",
-      "areaServed": {
-        "@type": "Place",
-        "name": "Worldwide"
+      "description": "AI-powered growth marketing agency — brand strategy, content marketing, SEO, and distribution. Based in Europe, serving clients worldwide.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "RO",
+        "addressRegion": "Europe"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "46.7712",
+        "longitude": "23.6236"
+      },
+      "areaServed": [
+        { "@type": "Place", "name": "Worldwide" },
+        { "@type": "Place", "name": "Europe" },
+        { "@type": "Place", "name": "United States" }
+      ],
       "priceRange": "$$",
-      "knowsAbout": ["Growth Marketing", "SEO", "Content Strategy", "Brand Design", "Digital Marketing"]
+      "knowsAbout": ["Growth Marketing", "SEO", "Content Strategy", "Brand Design", "Digital Marketing", "AI Marketing", "AEO Optimization"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Marketing Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Growth Marketing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO & Content Marketing" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand & Web Design" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social Media Management" } }
+        ]
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Norel Studio",
+      "url": "https://norelstudio.com/",
+      "description": "AI-powered growth marketing agency",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Norel Studio"
+      }
     }
     </script>
   </head>

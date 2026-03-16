@@ -95,10 +95,22 @@ html {
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Space Grotesk', sans-serif;
+  }
+
+  /* Improve CLS - reserve space for fonts */
+  h1, h2, h3 {
+    font-display: swap;
+  }
+
+  /* Skip to content for accessibility */
+  .skip-link {
+    @apply sr-only focus:not-sr-only focus:fixed focus:top-0 focus:left-0 focus:z-50 focus:bg-background focus:p-4 focus:text-foreground;
   }
 }
 
