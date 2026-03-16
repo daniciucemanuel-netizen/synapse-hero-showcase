@@ -50,7 +50,7 @@ const Offer = () => {
       {/* Header */}
       <header className="max-w-4xl mx-auto px-6 py-8 flex items-center justify-between border-b border-border">
         <span className="font-semibold text-foreground tracking-tight text-lg" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
-          The Growth Desk
+          Norel Studio
         </span>
         <div className="flex items-center gap-6 text-xs text-muted-foreground font-mono tracking-wide">
           <span>Prepared for {COMPANY}</span>
