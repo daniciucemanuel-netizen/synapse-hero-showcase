@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 const COMPANY = "[Company Name]";
 const DATE = new Date().toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 
+import SEO from "@/components/SEO";
+
 const fade = (delay = 0) => ({
   initial: { opacity: 0, y: 16 },
   animate: { opacity: 1, y: 0 },
@@ -47,6 +49,11 @@ const pricing = [
 const Offer = () => {
   return (
     <div className="min-h-screen bg-[hsl(var(--surface))]">
+      <SEO
+        title="Growth Proposal — Norel Studio"
+        description="Custom growth proposal from Norel Studio."
+        noindex={true}
+      />
       {/* Header */}
       <header className="max-w-4xl mx-auto px-6 py-8 flex items-center justify-between border-b border-border">
         <span className="font-semibold text-foreground tracking-tight text-lg" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
