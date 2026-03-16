@@ -15,6 +15,11 @@ const Work = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Case Studies — Norel Studio | Growth Marketing Portfolio"
+        description="See how Norel Studio drives growth for startups and scale-ups through brand, content, SEO, and distribution."
+        canonical="https://norelstudio.com/work"
+      />
       <Navbar />
       <main className="pt-28 pb-20">
         <div className="max-w-7xl mx-auto px-6">

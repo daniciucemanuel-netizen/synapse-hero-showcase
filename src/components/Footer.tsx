@@ -13,9 +13,12 @@ const Footer = () => {
         <div className="flex flex-col gap-16">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <img src={logo} alt="Norel Studio" className="h-8 mb-1" />
+              <img src={logo} alt="Norel Studio" className="h-8 mb-1" loading="lazy" />
               <p className="text-sm text-muted-foreground">
                 AI-powered growth marketing agency — brand strategy, content, SEO, and distribution.
+              </p>
+              <p className="text-xs text-muted-foreground/60 mt-1">
+                Remote-first · Based in Europe · Serving clients worldwide
               </p>
             </div>
             <nav className="flex items-center gap-6" aria-label="Footer navigation">

@@ -38,6 +38,11 @@ const posts = [
 const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO
+        title="Blog — Norel Studio | Growth Marketing Insights & Frameworks"
+        description="Frameworks, case breakdowns, and lessons from scaling brands with AI-powered growth marketing."
+        canonical="https://norelstudio.com/blog"
+      />
       <Navbar />
       <section className="pt-32 pb-20">
         <div className="max-w-4xl mx-auto px-6">
