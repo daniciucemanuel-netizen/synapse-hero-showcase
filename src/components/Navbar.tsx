@@ -107,7 +107,7 @@ const Navbar = () => {
                 </motion.a>
               ))}
               <motion.a
-                href="#contact"
+                href="/contact"
                 onClick={() => setMobileOpen(false)}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
