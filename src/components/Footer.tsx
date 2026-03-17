@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Instagram } from "lucide-react";
+import { Linkedin, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useTheme } from "next-themes";
 import logoBlack from "@/assets/Norel_Studio_Black.png";
