@@ -49,7 +49,7 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="#contact"
+            href="/contact"
             className="group w-[280px] sm:w-[240px] py-4 rounded-full text-sm font-medium bg-foreground text-background hover:bg-foreground/90 transition-all inline-flex items-center justify-center gap-2"
           >
             Get Your Free Growth Audit
