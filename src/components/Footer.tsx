@@ -38,13 +38,13 @@ const Footer = () => {
               © 2026 Norel Studio. All rights reserved.
             </div>
             <div className="flex items-center gap-5">
-              <a href="https://linkedin.com/company/norelstudio" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Norel Studio on LinkedIn">
+              <a href="https://linkedin.com/company/norel-studio" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Norel Studio on LinkedIn">
                 <Linkedin size={16} />
               </a>
-              <a href="https://twitter.com/norelstudio" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Norel Studio on X/Twitter">
-                <Twitter size={16} />
+              <a href="https://x.com/NorelStudio" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Norel Studio on X">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </a>
-              <a href="#" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Norel Studio on Instagram">
+              <a href="https://www.instagram.com/norelstudiooficial/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Norel Studio on Instagram">
                 <Instagram size={16} />
               </a>
             </div>
