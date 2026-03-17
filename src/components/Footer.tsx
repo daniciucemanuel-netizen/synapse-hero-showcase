@@ -19,7 +19,7 @@ const Footer = () => {
                 AI-powered growth marketing agency — brand strategy, content marketing, SEO, and distribution.
               </p>
               <p className="text-xs text-muted-foreground/60 mt-1">
-                Remote-first · Based in Europe · Serving clients worldwide
+                Remote-first · Serving clients worldwide
               </p>
               <address className="text-xs text-muted-foreground/50 mt-2 not-italic">
                 <a href="mailto:hello@norelstudio.com" className="hover:text-foreground transition-colors">hello@norelstudio.com</a>

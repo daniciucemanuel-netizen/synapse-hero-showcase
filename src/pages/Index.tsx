@@ -16,7 +16,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <SEO
         title="Norel Studio — AI-Powered Growth Marketing Agency | Brand, Content & SEO"
-        description="Norel Studio is an AI-powered growth marketing agency specializing in brand strategy, content marketing, SEO, and distribution. 2.4x organic growth, 32% lead increase. Based in Europe, serving clients worldwide. Schedule your free growth audit today."
+        description="Norel Studio is an AI-powered growth marketing agency specializing in brand strategy, content marketing, SEO, and distribution. 2.4x organic growth, 32% lead increase. Schedule your free growth audit today."
         canonical="https://norelstudio.com/"
       />
       <a href="#main-content" className="skip-link">Skip to main content</a>

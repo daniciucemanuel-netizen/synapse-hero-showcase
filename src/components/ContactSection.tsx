@@ -84,8 +84,6 @@ const ContactSection = () => {
             <div className="mt-8">
               <address className="not-italic text-background/30 text-xs">
                 <a href="mailto:hello@norelstudio.com" className="hover:text-background/60 transition-colors">hello@norelstudio.com</a>
-                <span className="mx-2">·</span>
-                Europe-based, worldwide service
               </address>
             </div>
           </motion.div>
