@@ -67,7 +67,7 @@ const Navbar = () => {
               {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
             </button>
             <a
-              href="#contact"
+              href="/contact"
               className="hidden md:inline-flex items-center px-5 py-2.5 rounded-full text-sm font-medium bg-[hsl(var(--sage))] text-white hover:opacity-90 transition-all"
             >
               Free Growth Audit
