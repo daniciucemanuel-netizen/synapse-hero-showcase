@@ -63,7 +63,7 @@ const ContactSection = () => {
               Get your free growth audit.
             </h2>
             <p className="text-background/60 text-base leading-relaxed mb-14 max-w-lg">
-              Tell us what you're building. We'll respond within 24 hours with a custom growth roadmap — no commitment, no pitch deck required. We work with teams worldwide from our European base.
+              Tell us what you're building. We'll respond within 24 hours with a custom growth roadmap — no commitment, no pitch deck required.
             </p>
 
             <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-background/40 text-xs tracking-wide">
@@ -84,8 +84,6 @@ const ContactSection = () => {
             <div className="mt-8">
               <address className="not-italic text-background/30 text-xs">
                 <a href="mailto:hello@norelstudio.com" className="hover:text-background/60 transition-colors">hello@norelstudio.com</a>
-                <span className="mx-2">·</span>
-                Europe-based, worldwide service
               </address>
             </div>
           </motion.div>
