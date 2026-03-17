@@ -46,7 +46,7 @@ const Navbar = () => {
             <img src={logo} alt="Norel Studio" className="h-8" fetchPriority="high" />
           </Link>
 
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-8 ml-auto mr-8">
             {navLinks.map((link) => (
               <a
                 key={link.label}
