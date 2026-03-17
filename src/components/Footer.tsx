@@ -29,7 +29,7 @@ const Footer = () => {
               <a href="/#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
               <Link to="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
               <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
-              <a href="/#contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+              <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
             </nav>
           </div>
 
