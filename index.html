@@ -142,6 +142,11 @@
       }
     }
     </script>
+    <script>
+      // After 2s, force-show any Framer Motion elements still at opacity:0
+      // (covers Googlebot and bots that don't trigger IntersectionObserver)
+      setTimeout(function(){var s=document.createElement('style');s.textContent='[style*="opacity: 0"]{opacity:1!important;transform:none!important}';document.head.appendChild(s)},2000);
+    </script>
     <noscript><style>#static-fallback{display:block!important}</style></noscript>
   </head>
 
