@@ -112,6 +112,15 @@ html {
   .skip-link {
     @apply sr-only focus:not-sr-only focus:fixed focus:top-0 focus:left-0 focus:z-50 focus:bg-background focus:p-4 focus:text-foreground;
   }
+
+  /* CWV: content-visibility for below-fold sections to reduce initial render cost */
+  section[id="services"],
+  section[id="results"],
+  section[id="work"],
+  section[id="faq"] {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 600px;
+  }
 }
 
 @layer components {
