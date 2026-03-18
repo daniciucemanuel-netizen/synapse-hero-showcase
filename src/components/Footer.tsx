@@ -25,11 +25,11 @@ const Footer = () => {
                 <a href="mailto:hello@norelstudio.com" className="hover:text-foreground transition-colors">hello@norelstudio.com</a>
               </address>
             </div>
-            <nav className="flex items-center gap-6" aria-label="Footer navigation">
-              <a href="/#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
-              <Link to="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
-              <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
-              <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
+            <nav className="flex flex-wrap items-center gap-2" aria-label="Footer navigation">
+              <a href="/#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[48px] px-3 inline-flex items-center">Services</a>
+              <Link to="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[48px] px-3 inline-flex items-center">Case Studies</Link>
+              <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[48px] px-3 inline-flex items-center">Blog</Link>
+              <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[48px] px-3 inline-flex items-center">Contact</Link>
             </nav>
           </div>
 
@@ -38,14 +38,14 @@ const Footer = () => {
               © 2026 Norel Studio. All rights reserved.
             </div>
             <div className="flex items-center gap-5">
-              <a href="https://linkedin.com/company/norel-studio" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Norel Studio on LinkedIn">
-                <Linkedin size={16} />
+              <a href="https://linkedin.com/company/norel-studio" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors min-w-[48px] min-h-[48px] inline-flex items-center justify-center" aria-label="Norel Studio on LinkedIn">
+                <Linkedin size={18} />
               </a>
-              <a href="https://x.com/NorelStudio" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Norel Studio on X">
-                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <a href="https://x.com/NorelStudio" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors min-w-[48px] min-h-[48px] inline-flex items-center justify-center" aria-label="Norel Studio on X">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
               </a>
-              <a href="https://www.instagram.com/norelstudiooficial/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors" aria-label="Norel Studio on Instagram">
-                <Instagram size={16} />
+              <a href="https://www.instagram.com/norelstudiooficial/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors min-w-[48px] min-h-[48px] inline-flex items-center justify-center" aria-label="Norel Studio on Instagram">
+                <Instagram size={18} />
               </a>
             </div>
           </div>

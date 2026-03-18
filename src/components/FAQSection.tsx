@@ -84,10 +84,10 @@ const FAQSection = () => {
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion type="multiple" className="w-full">
             {faqs.map((faq, i) => (
               <AccordionItem key={i} value={`item-${i}`} className="border-border">
-                <AccordionTrigger className="text-left text-sm font-medium text-foreground hover:text-[hsl(var(--sage))] transition-colors py-5">
+                <AccordionTrigger className="text-left text-sm font-medium text-foreground hover:text-[hsl(var(--sage))] transition-colors py-5 min-h-[48px]">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-5">

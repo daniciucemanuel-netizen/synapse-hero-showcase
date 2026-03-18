@@ -61,7 +61,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             <button
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="p-2 rounded-lg text-muted-foreground hover:text-foreground transition-all"
+              className="p-3 min-w-[48px] min-h-[48px] flex items-center justify-center rounded-lg text-muted-foreground hover:text-foreground transition-all"
               aria-label="Toggle theme"
             >
               {theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
@@ -74,7 +74,7 @@ const Navbar = () => {
             </a>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden p-2 rounded-lg text-muted-foreground hover:text-foreground transition-all"
+              className="md:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center rounded-lg text-muted-foreground hover:text-foreground transition-all"
               aria-label="Toggle menu"
             >
               {mobileOpen ? <X size={20} /> : <Menu size={20} />}
