@@ -74,7 +74,7 @@ const Navbar = () => {
             </a>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="md:hidden p-2 rounded-lg text-muted-foreground hover:text-foreground transition-all"
+              className="md:hidden p-3 min-w-[48px] min-h-[48px] flex items-center justify-center rounded-lg text-muted-foreground hover:text-foreground transition-all"
               aria-label="Toggle menu"
             >
               {mobileOpen ? <X size={20} /> : <Menu size={20} />}
