@@ -25,11 +25,11 @@ const Footer = () => {
                 <a href="mailto:hello@norelstudio.com" className="hover:text-foreground transition-colors">hello@norelstudio.com</a>
               </address>
             </div>
-            <nav className="flex items-center gap-6" aria-label="Footer navigation">
-              <a href="/#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Services</a>
-              <Link to="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Case Studies</Link>
-              <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Blog</Link>
-              <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Contact</Link>
+            <nav className="flex flex-wrap items-center gap-2" aria-label="Footer navigation">
+              <a href="/#services" className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[48px] px-3 inline-flex items-center">Services</a>
+              <Link to="/work" className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[48px] px-3 inline-flex items-center">Case Studies</Link>
+              <Link to="/blog" className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[48px] px-3 inline-flex items-center">Blog</Link>
+              <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors min-h-[48px] px-3 inline-flex items-center">Contact</Link>
             </nav>
           </div>
 
