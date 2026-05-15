@@ -74,7 +74,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Blog — Norel Studio | Growth Marketing Insights, SEO & Brand Strategy"
+        title="Blog — Growth Marketing & SEO Insights | Norel Studio"
         description="Actionable frameworks, case breakdowns, and growth marketing lessons. Learn about AI-powered SEO, content strategy, and brand building from Norel Studio."
         canonical="https://norelstudio.com/blog"
         jsonLd={blogJsonLd}
