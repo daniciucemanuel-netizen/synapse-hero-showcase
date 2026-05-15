@@ -74,7 +74,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Contact Norel Studio — Free Growth Audit | AI-Powered Marketing Agency"
+        title="Contact — Free Growth Audit | Norel Studio"
         description="Get in touch with Norel Studio for a free growth audit. Tell us about your project and receive a custom growth roadmap within 24 hours. No commitment required."
         canonical="https://norelstudio.com/contact"
       />

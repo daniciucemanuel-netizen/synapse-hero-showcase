@@ -1,0 +1,24 @@
+# Norel Studio
+
+> AI-powered growth marketing agency specializing in brand strategy, content production, and SEO for startups and scaling businesses.
+
+Norel Studio is a full-funnel growth marketing partner. We combine brand and web design, content marketing, AI-enhanced SEO, social and community management, and growth partnerships into one engagement so teams ship faster and compound traffic month over month.
+
+## Pages
+
+- [Home](/): Overview of services, results, process, and FAQs.
+- [Case Studies & Portfolio](/work): Selected client work and measurable outcomes.
+- [Blog](/blog): Growth marketing, SEO, and brand strategy insights.
+- [Contact](/contact): Request a free growth audit and start a project.
+
+## Services
+
+- Brand & Web — Logo systems, brand guidelines, and conversion-optimized websites.
+- Content & SEO — Long-form articles, landing page copy, and AI-enhanced SEO/AEO audits.
+- Social & Community — X, LinkedIn, Discord content calendars and community management.
+- Growth & Partnerships — KOL outreach, co-marketing, PR, and launch playbooks.
+
+## Contact
+
+- Email: hello@norelstudio.com
+- Site: https://norelstudio.com/

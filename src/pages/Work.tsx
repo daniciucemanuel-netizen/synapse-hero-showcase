@@ -26,7 +26,7 @@ const Work = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEO
-        title="Case Studies — Norel Studio | Growth Marketing Portfolio & Results"
+        title="Case Studies & Portfolio — Norel Studio"
         description="See how Norel Studio drives 2.4x organic growth for startups and scale-ups through brand strategy, content marketing, SEO, and distribution. View our portfolio."
         canonical="https://norelstudio.com/work"
         jsonLd={breadcrumbJsonLd}
